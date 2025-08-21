@@ -1,6 +1,9 @@
 import smartLogo from './assets/iconwhite.png';
 import './App.css';
 
+import androidWhiteLogo from './assets/Android_logo_white_30x30.svg';
+import appleWhiteLogo from './assets/Apple_logo_white_30x30.svg';
+
 import AccordionAcro from './components/ui/AccordionAcro.jsx';
 import ButtonFontSize from './components/buttons/ButtonFontSize.jsx';
 
@@ -65,14 +68,20 @@ function App() {
 									target='_blank'
 									rel='noopener noreferrer'
 								>
-									Android
+									<img
+										src={androidWhiteLogo}
+										className='logo'
+										alt='Android logo'
+									/>
+									<div>Android</div>
 								</a>
 								<a
 									href='https://www.youtube.com/watch?v=B7fKs4dTeu0'
 									target='_blank'
 									rel='noopener noreferrer'
 								>
-									Apple iOS
+									<img src={appleWhiteLogo} className='logo' alt='Apple logo' />
+									<div>Apple iOS</div>
 								</a>
 							</div>
 						</div>
