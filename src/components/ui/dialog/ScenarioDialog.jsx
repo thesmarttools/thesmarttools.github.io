@@ -24,7 +24,7 @@ function ScenarioDialog({ btnLabel, title, content }) {
 			<DialogContent className='sm:max-w-[425px]'>
 				<DialogHeader>
 					<DialogTitle>{title}</DialogTitle>
-					<DialogDescription>{content}</DialogDescription>
+					<DialogDescription dangerouslySetInnerHTML={{ __html: content }} />
 				</DialogHeader>
 			</DialogContent>
 		</Dialog>

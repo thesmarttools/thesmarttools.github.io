@@ -53,7 +53,7 @@ const data = [
 			{
 				title: "Friend Didn't Text Back",
 				content:
-					"Your friend hasn't responded to your message. Rather than assuming they're mad at you (old belief), you consider they might be busy or dealing with their own stuff (new belief).",
+					"Your friend hasn't responded to your message.<br /><br />  Rather than assuming they're mad at you (old belief), you consider they might be busy or dealing with their own stuff (new belief).",
 				btnLabel: 'Question Assumptions',
 			},
 		],
@@ -92,13 +92,13 @@ const data = [
 			{
 				title: 'Binge Watching vs. Sleep',
 				content:
-					"Cost: Exhaustion, poor work performance, health issues. Benefit: Temporary escape, entertainment. Analysis: The short-term comfort isn't worth the long-term consequences to your wellbeing.",
+					"Cost: <br /> Exhaustion, poor work performance, health issues.<br /> <br />  Benefit:<br />  Temporary escape, entertainment.<br /> <br />  Analysis: <br /> The short-term comfort isn't worth the long-term consequences to your wellbeing.",
 				btnLabel: 'Weigh It Out',
 			},
 			{
 				title: 'Avoiding Difficult Conversations',
 				content:
-					'Cost: Unresolved conflicts, built-up resentment, damaged relationships. Benefit: Temporary peace, avoiding confrontation. Analysis: The temporary comfort is creating bigger problems that will be harder to solve later.',
+					'Cost:<br />  Unresolved conflicts, built-up resentment, damaged relationships.<br /> <br />  Benefit:<br />  Temporary peace, avoiding confrontation. <br /> <br /> Analysis:<br />  The temporary comfort is creating bigger problems that will be harder to solve later.',
 				btnLabel: 'Face the Truth',
 			},
 		],
@@ -151,13 +151,13 @@ const data = [
 			{
 				title: 'Craving Alcohol at a Party',
 				content:
-					"Delay: 'I'll wait 15 minutes first.' Escape: Step outside or go to the bathroom. Accept: 'This urge will pass.' Distract: Start a conversation with someone new. Substitute: Grab a mocktail or soda instead.",
+					"Delay:<br />  'I'll wait 15 minutes first.' Escape: Step outside or go to the bathroom.<br /> <br />  Accept:<br />  'This urge will pass.'<br /> <br />  Distract:<br />  Start a conversation with someone new.<br /> <br />  Substitute:<br />  Grab a mocktail or soda instead.",
 				btnLabel: 'Beat the Craving',
 			},
 			{
 				title: 'Wanting to Text an Ex',
 				content:
-					"Delay: 'I'll wait until tomorrow.' Escape: Leave your phone in another room. Avoid: Delete their number (again). Distract: Call a friend or watch funny videos. Substitute: Write in a journal instead.",
+					"Delay:<br />  'I'll wait until tomorrow.'<br /> <br />  Escape:<br /> Leave your phone in another room.<br /> <br />  Avoid: <br /> Delete their number (again).<br /> <br />  Distract: <br /> Call a friend or watch funny videos. <br /> <br /> Substitute:<br />  Write in a journal instead.<br /> <br /> ",
 				btnLabel: 'Resist the Urge',
 			},
 		],
@@ -217,7 +217,7 @@ const data = [
 			{
 				title: 'Gambling Urge Imagery',
 				content:
-					'You start visualizing winning big at the casino. Recognize this as destructive imagery, become aware of the pattern, refuse to engage with the fantasy, and replace it with images of financial stability and peace of mind.',
+					'You start visualizing winning big at the casino. <br /> <br /> Recognize this as destructive imagery, become aware of the pattern, refuse to engage with the fantasy, and replace it with images of financial stability and peace of mind.',
 				btnLabel: 'Block the Fantasy',
 			},
 			{
@@ -269,13 +269,13 @@ const data = [
 			{
 				title: 'Afternoon Craving Attack',
 				content:
-					"You're suddenly craving your old habit at 3 PM. Check: Haven't eaten since breakfast (Hungry), frustrated with work project (Angry), been alone all day (Lonely), only got 4 hours sleep (Tired). Solution: Eat a healthy snack, take a walk, call a friend, plan an early bedtime.",
+					"You're suddenly craving your old habit at 3 PM.<br /> <br />  Check: <br /> Haven't eaten since breakfast (Hungry),<br />  frustrated with work project (Angry),<br /> been alone all day (Lonely), <br /> only got 4 hours sleep (Tired). <br /> <br /> Solution: <br /> Eat a healthy snack, take a walk, call a friend, plan an early bedtime.<br /> <br /> ",
 				btnLabel: 'Check HALT',
 			},
 			{
 				title: 'Weekend Relapse Risk',
 				content:
-					"Saturday evening and you're thinking about using. Check: Skipped meals while running errands (Hungry), argument with family (Angry), friends are all busy (Lonely), stayed up too late binge-watching (Tired). Address each need before the craving gets stronger.",
+					"Saturday evening and you're thinking about using.<br /> <br />  Check:<br />  Skipped meals while running errands (Hungry), <br /> argument with family (Angry), <br /> friends are all busy (Lonely), <br /> stayed up too late binge-watching (Tired). <br /> <br /> Address each need before the craving gets stronger.",
 				btnLabel: 'Address Needs',
 			},
 		],
@@ -321,13 +321,13 @@ const data = [
 			{
 				title: 'Feeling Hopeless and Isolated',
 				content:
-					'Volunteer at a local food bank (Helping), join a recovery support group (Others), remember your goal of being present for your kids (Purpose), celebrate 30 days clean (Esteem). Each action builds on the others to create genuine hope.',
+					'Volunteer at a local food bank (Helping),<br />  join a recovery support group (Others), <br /> remember your goal of being present for your kids (Purpose), <br /> celebrate 30 days clean (Esteem). <br /> <br /> Each action builds on the others to create genuine hope.',
 				btnLabel: 'Build Hope',
 			},
 			{
 				title: 'Lost Sense of Direction',
 				content:
-					"Help a neighbor with groceries (Helping), reach out to old friends you trust (Others), explore going back to school (Purpose), acknowledge you've been handling stress better lately (Esteem). Small steps toward a meaningful life.",
+					"Help a neighbor with groceries (Helping),<br />  reach out to old friends you trust (Others), explore going back to school (Purpose), acknowledge you've been handling stress better lately (Esteem). <br /> <br /> Small steps toward a meaningful life.",
 				btnLabel: 'Find Direction',
 			},
 		],
@@ -366,7 +366,7 @@ const data = [
 			{
 				title: 'Career vs. Family Time Decision',
 				content:
-					'Job offers overtime but kids have a recital. Your hierarchy: Family relationships, personal health, financial stability, career advancement. Since family tops your list, the choice becomes clear - attend the recital.',
+					'Job offers overtime but kids have a recital. <br /> <br /> Your hierarchy: Family relationships, personal health, financial stability, career advancement. <br /> Since family tops your list, the choice becomes clear - attend the recital.',
 				btnLabel: 'Choose Values',
 			},
 			{

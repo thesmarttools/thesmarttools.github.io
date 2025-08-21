@@ -53,15 +53,17 @@ function App() {
 								<br />
 								<br />
 								If you are using an Android or iOS device, there are buttons at
-								the bottom to show you howto add this webapp as an app on your
-								homescreen for quick access!
+								the bottom to videos that show you how to add this webapp as an
+								app on your homescreen for quick access!
 							</div>
 						</div>
 
 						<AccordionAcro />
 
 						<div className='footer'>
-							<div className='install'>Add to you home screen</div>
+							<div className='install'>
+								Add to you home screen video instructions
+							</div>
 							<div className='links'>
 								<a
 									href='https://www.youtube.com/watch?v=O1xEXKB6tNg'
