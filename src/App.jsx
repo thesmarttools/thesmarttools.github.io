@@ -54,7 +54,10 @@ function App() {
 								<br />
 								If you are using an Android or iOS device, there are buttons at
 								the bottom to videos that show you how to add this webapp as an
-								app on your homescreen for quick access!
+								app on your homescreen for quick access.
+								<br />
+								<br />
+								Click on a heading to find out what it means.
 							</div>
 						</div>
 
