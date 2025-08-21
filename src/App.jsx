@@ -3,6 +3,27 @@ import './App.css';
 
 import AccordionAcro from './components/ui/AccordionAcro.jsx';
 import ButtonFontSize from './components/buttons/ButtonFontSize.jsx';
+
+// if ('serviceWorker' in navigator) {
+// 	navigator.serviceWorker
+// 		.register('/sw.js')
+// 		.then(() => console.log('Service Worker registered.'))
+// 		.catch((err) => console.log('Service Worker failed:', err));
+// }
+// window.addEventListener('beforeinstallprompt', (e) => {
+// 	e.preventDefault();
+// 	deferredPrompt = e;
+// 	installBtn.style.display = 'inline-block';
+// });
+// const installBtnClick = () => {
+// 	//installBtn.addEventListener('click', async () => {
+// 		installBtn.style.display = 'none';
+// 		deferredPrompt.prompt();
+// 		const choiceResult = await deferredPrompt.userChoice;
+// 		console.log('User choice:', choiceResult.outcome);
+// 		deferredPrompt = null;
+// 	//});
+// };
 function App() {
 	return (
 		<>
@@ -24,12 +45,13 @@ function App() {
 							</h1>
 							<div className='subtitle'>
 								The tools we learn at SMART meetings are ace but remembering
-								them can be hard. This app was created so that you don&Apos;t
+								them can be hard. This app was created so that you don&apos;t
 								have to!
 								<br />
 								<br />
 								If you are using an Android or iOS device, there are buttons at
-								the bottom to add this webpage as an app on your homescreen.
+								the bottom to show you howto add this webapp as an app on your
+								homescreen for quick access!
 							</div>
 						</div>
 
