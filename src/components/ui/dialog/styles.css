@@ -1,0 +1,79 @@
+.scenariosGroup button {
+	all: unset;
+}
+.scenariosGroup button {
+	background-color: transparent;
+	transform: scale(1);
+	padding: 7px 12px;
+
+	border-radius: 8px;
+	transition: all 0.3s ease-in-out;
+	display: flex;
+	outline: 1px solid #ababab;
+	color: #fff;
+}
+.scenariosGroup button:hover {
+	font-weight: 600;
+}
+div[role='dialog'][data-state='open'] button {
+	background-color: transparent;
+	transform: scale(1);
+	/* padding: 7px 12px; */
+	padding: 3px;
+	/* border-radius: 8px; */
+	transition: all 0.3s ease-in-out;
+	display: flex;
+	outline: 1px solid #ababab;
+	color: #fff;
+}
+
+div[role='dialog'][data-state='open'] button:hover {
+	background-color: transparent;
+	transform: scale(1.1);
+	color: #fff;
+	/* font-weight: 600; */
+	outline: 1px solid #fff;
+}
+div[role='dialog'][data-state='open'] button:focus,
+div[role='dialog'][data-state='open'] button:active,
+div[role='dialog'][data-state='open'] button:focus-within {
+	/* border: none; */
+	outline: 1px solid #fff;
+	box-shadow: none;
+}
+div[role='dialog'][data-state='open'] {
+	background-color: #1b869e;
+	border: none;
+	/* //	border: 1px solid #ababab; */
+	color: #fff;
+	min-height: 50vh;
+}
+div[role='dialog'][data-state='open'] > div {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+	color: #fff;
+	margin-top: 2rem;
+}
+div[role='dialog'][data-state='open'] > div h2 {
+	font-size: 1.35rem;
+	letter-spacing: 0.03rem;
+	font-weight: 500;
+}
+div[role='dialog'][data-state='open'] > div h2::after {
+	content: '';
+	display: inline-block;
+	width: 60%;
+	height: 1px;
+	background-color: #bcb6ea;
+	margin: 0 auto;
+}
+div[role='dialog'][data-state='open'] > div > * {
+	color: #fff;
+	font-size: 1.1rem;
+	line-height: 1.4;
+}
+div[role='dialog'][data-state='open'] > div > p {
+	text-align: left;
+	font-weight: 400;
+}
