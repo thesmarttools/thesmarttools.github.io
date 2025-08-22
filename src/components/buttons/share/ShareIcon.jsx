@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 // import androidIcon from '../../assets/share_android.svg';
 // import iosIcon from '../../assets/share_apple.svg';
 import ShareIconAndroid from './ShareIconAndroid';
