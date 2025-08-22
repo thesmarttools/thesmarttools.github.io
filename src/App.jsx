@@ -28,6 +28,7 @@ import Share from './components/buttons/share/Share.jsx';
 // 		console.log('User choice:', choiceResult.outcome);
 // 		deferredPrompt = null;
 // 	//});
+
 // };
 function App() {
 	return (
