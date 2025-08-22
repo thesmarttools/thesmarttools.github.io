@@ -9,7 +9,7 @@
 .settingsDrawer {
 	display: flex;
 	width: 100%;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 .btn {
 	width: 40px;
@@ -41,6 +41,10 @@ button:hover {
 div[role='dialog'][data-state='open'] {
 	background-color: #373737;
 	color: #fff;
+}
+div[role='dialog'][data-state='open'] h2 {
+	font-weight: 400;
+	padding: 1rem 0rem;
 }
 div[role='dialog'][data-state='open'] > div:first-child {
 	display: none;
