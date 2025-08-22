@@ -1,0 +1,7 @@
+@import '../buttonStyles.css';
+
+.update-icon svg {
+	path {
+		transform: scale(1.5);
+	}
+}

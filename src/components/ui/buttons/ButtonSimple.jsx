@@ -1,20 +1,19 @@
 import { Button } from '@/components/ui/button';
 // import iconIncreaseFontSize from '/src/assets/text_increase_24dp.svg';
 // import iconDescreaseFontSize from '/src/assets/text_decrease_24dp.svg';
-import './styles.css';
+import './buttonStyles.css';
 import PropTypes from 'prop-types';
 
-const ButtonScenario = ({ label, callback }) => {
+const ButtonSimple = ({ label, callback }) => {
 	return (
-		<div className='btn scenario' onClick={callback}>
+		<div className='btn' onClick={callback}>
 			<Button variant='outline'>{label}</Button>
 		</div>
 	);
 };
-ButtonScenario.propTypes = {
+ButtonSimple.propTypes = {
 	label: PropTypes.string.isRequired,
 	callback: PropTypes.func,
 };
-ButtonScenario.displayName = 'ButtonScenario';
-
-export default ButtonScenario;
+ButtonSimple.displayName = 'ButtonSimple';
+export default ButtonSimple;

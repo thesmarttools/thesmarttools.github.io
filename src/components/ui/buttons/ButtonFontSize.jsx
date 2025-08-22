@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import iconIncreaseFontSize from '/src/assets/text_increase_24dp.svg';
 import iconDescreaseFontSize from '/src/assets/text_decrease_24dp.svg';
-import './styles.css';
+import './buttonStyles.css';
 import PropTypes from 'prop-types';
 const stepFontSizePx = 2;
 const stepScale = 0.2;

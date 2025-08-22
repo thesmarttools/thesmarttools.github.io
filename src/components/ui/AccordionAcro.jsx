@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Accordion } from 'radix-ui';
-import ButtonScenario from '../buttons/ButtonScenario';
+// import ButtonScenario from '../ui/buttons/ButtonScenario';
 import ScenarioDialog from './dialog/ScenarioDialog';
 import { ChevronDownIcon } from '@radix-ui/react-icons';
 import starOutline from '/src/assets/star_outline.svg';
@@ -11,9 +11,6 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import data from '../../data/data.js';
 
-const showExample = (id) => {
-	console.log(id);
-};
 const AccordionDemo = () => {
 	return (
 		<Accordion.Root

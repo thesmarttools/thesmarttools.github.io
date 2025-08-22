@@ -20,19 +20,11 @@ const ShareIcon = () => {
 	return (
 		<div>
 			{isAndroid && (
-				<div className='share-icon btn'>
-					<div dangerouslySetInnerHTML={{ __html: ShareIconAndroid }} />
-				</div>
+				<div dangerouslySetInnerHTML={{ __html: ShareIconAndroid }} />
 			)}
-			{isIOS && (
-				<div className='share-icon btn'>
-					<div dangerouslySetInnerHTML={{ __html: ShareIconApple }} />
-				</div>
-			)}
+			{isIOS && <div dangerouslySetInnerHTML={{ __html: ShareIconApple }} />}
 			{isAndroid === null && isIOS === null && (
-				<div className='share-icon btn'>
-					<div dangerouslySetInnerHTML={{ __html: ShareIconAndroid }} />
-				</div>
+				<div dangerouslySetInnerHTML={{ __html: ShareIconAndroid }} />
 			)}
 		</div>
 	);

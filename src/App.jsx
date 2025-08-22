@@ -5,9 +5,8 @@ import androidWhiteLogo from './assets/Android_logo_white_30x30.svg';
 import appleWhiteLogo from './assets/Apple_logo_white_30x30.svg';
 
 import AccordionAcro from './components/ui/AccordionAcro.jsx';
-import ButtonFontSize from './components/buttons/ButtonFontSize.jsx';
 
-import Share from './components/buttons/share/Share.jsx';
+import SettingsDrawer from './components/ui/settings/SettingsDrawer.jsx';
 
 // if ('serviceWorker' in navigator) {
 // 	navigator.serviceWorker
@@ -36,11 +35,8 @@ function App() {
 			<div className='app'>
 				<div className='main'>
 					<div className='inner'>
-						<div className='settings'>
-							<ButtonFontSize size='decreasse' />
-							<ButtonFontSize size='increase' />
-							<Share />
-						</div>
+						<SettingsDrawer />
+
 						<div className='header'>
 							<div>
 								<img src={smartLogo} className='logo' alt='Vite logo' />

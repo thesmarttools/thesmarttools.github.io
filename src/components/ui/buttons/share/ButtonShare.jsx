@@ -1,6 +1,6 @@
 import ShareIcon from './ShareIcon';
 import './styles.css';
-const ShareButton = () => {
+const ButtonShare = () => {
 	const handleShare = async () => {
 		try {
 			await navigator.share({
@@ -14,9 +14,11 @@ const ShareButton = () => {
 	};
 
 	return (
-		<button onClick={handleShare}>
-			<ShareIcon />
-		</button>
+		<div className='share-icon btn'>
+			<button onClick={handleShare}>
+				<ShareIcon />
+			</button>
+		</div>
 	);
 };
-export default ShareButton;
+export default ButtonShare;

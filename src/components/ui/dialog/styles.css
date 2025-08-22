@@ -29,9 +29,7 @@ div[role='dialog'][data-state='open'] button {
 
 div[role='dialog'][data-state='open'] button:hover {
 	background-color: transparent;
-	transform: scale(1.1);
 	color: #fff;
-	/* font-weight: 600; */
 	outline: 1px solid #fff;
 }
 div[role='dialog'][data-state='open'] button:focus,

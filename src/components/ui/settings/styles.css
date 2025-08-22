@@ -1,0 +1,76 @@
+.btn button {
+	all: unset;
+}
+.settings {
+	display: flex;
+	width: 40px;
+	margin-top: 16px;
+}
+.settingsDrawer {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+.btn {
+	width: 40px;
+	height: 40px;
+	border-radius: 8px;
+	border: none;
+	background-color: transparent;
+	outline: 1px solid #ababab;
+	cursor: pointer;
+}
+.btn button {
+	background-color: transparent;
+	transform: scale(1);
+	padding: 7px 6px;
+	transition: all 0.3s ease-in-out;
+	display: flex;
+}
+.btn > div {
+	padding: 8px 7px;
+}
+button img {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+button:hover {
+	background-color: transparent;
+}
+div[role='dialog'][data-state='open'] {
+	background-color: #373737;
+	color: #fff;
+}
+div[role='dialog'][data-state='open'] > div:first-child {
+	display: none;
+}
+div[role='dialog'][data-state='open'] > div {
+	max-width: 425px;
+}
+div[role='dialog'][data-state='open'] button {
+	outline: none;
+}
+div[role='dialog'][data-state='open'] button:hover,
+div[role='dialog'][data-state='open'] button:focus-within {
+	outline: none;
+}
+div[role='dialog'][data-state='open'] > div h2 {
+	width: 100%;
+	text-align: center;
+}
+div[role='dialog'][data-state='open'] > div h2::after {
+	display: none;
+}
+div[role='dialog'][data-state='open'] .drawerFooter {
+	display: flex;
+	align-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+}
+div[role='dialog'][data-state='open'] .drawerFooter button {
+	width: fit-content;
+	padding: 8px 12px;
+	border: 1px solid #5d5d5d;
+	outline: none;
+}
