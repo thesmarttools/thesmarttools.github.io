@@ -7,6 +7,8 @@ import appleWhiteLogo from './assets/Apple_logo_white_30x30.svg';
 import AccordionAcro from './components/ui/AccordionAcro.jsx';
 import ButtonFontSize from './components/buttons/ButtonFontSize.jsx';
 
+import Share from './components/buttons/share/Share.jsx';
+
 // if ('serviceWorker' in navigator) {
 // 	navigator.serviceWorker
 // 		.register('/sw.js')
@@ -33,9 +35,10 @@ function App() {
 			<div className='app'>
 				<div className='main'>
 					<div className='inner'>
-						<div className='fontSizesCont'>
+						<div className='settings'>
 							<ButtonFontSize size='decreasse' />
 							<ButtonFontSize size='increase' />
+							<Share />
 						</div>
 						<div className='header'>
 							<div>
@@ -50,14 +53,14 @@ function App() {
 								The tools we learn at SMART meetings are ace but remembering
 								them can be hard. This app was created so that you don&apos;t
 								have to!
-								<br />
-								<br />
-								If you are using an Android or iOS device, there are buttons at
-								the bottom to videos that show you how to add this webapp as an
-								app on your homescreen for quick access.
-								<br />
-								<br />
-								Click on a heading to find out what it means.
+							</div>
+							<div className='subtitle start'>
+								Tap a heading to find out about the tool.
+							</div>
+							<div className='subtitle tip'>
+								TIP: If you are using an Android or iOS device, there are
+								buttons at the bottom to videos that show you how to add this
+								webapp as an app on your homescreen for quick access.
 							</div>
 						</div>
 

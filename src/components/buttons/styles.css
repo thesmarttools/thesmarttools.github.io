@@ -1,7 +1,7 @@
-.fontSizesCont .btn button {
+.settings .btn button {
 	all: unset;
 }
-.fontSizesCont {
+.settings {
 	position: absolute;
 	display: flex;
 	flex-direction: column;
@@ -9,7 +9,7 @@
 	margin-top: 16px;
 }
 
-.fontSizesCont .btn {
+.settings .btn {
 	width: 40px;
 	height: 40px;
 	border-radius: 8px;
@@ -18,19 +18,22 @@
 	outline: 1px solid #ababab;
 	cursor: pointer;
 }
-
-.fontSizesCont .btn button {
+.settings .btn > div,
+.settings .btn button {
 	background-color: transparent;
 	transform: scale(1);
 	padding: 7px 6px;
 	transition: all 0.3s ease-in-out;
 	display: flex;
 }
-.fontSizesCont button img {
+.settings .btn > div {
+	padding: 8px 7px;
+}
+.settings button img {
 	width: 100%;
 	height: 100%;
 }
-.fontSizesCont button:hover {
+.settings button:hover {
 	background-color: transparent;
 	transform: scale(1.1);
 }
