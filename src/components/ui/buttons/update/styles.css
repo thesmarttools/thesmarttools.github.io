@@ -5,3 +5,7 @@
 		transform: scale(1.5);
 	}
 }
+.update-icon button {
+	border: none;
+	outline: none;
+}

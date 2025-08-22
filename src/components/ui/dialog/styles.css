@@ -1,3 +1,7 @@
+.scenarios .scenariosGroup {
+	width: 90%;
+	margin: 0 auto;
+}
 .scenariosGroup button {
 	all: unset;
 }
@@ -15,6 +19,7 @@
 .scenariosGroup button:hover {
 	font-weight: 600;
 }
+
 div[role='dialog'][data-state='open'] button {
 	background-color: transparent;
 	transform: scale(1);
@@ -45,6 +50,7 @@ div[role='dialog'][data-state='open'] {
 	/* //	border: 1px solid #ababab; */
 	color: #fff;
 	min-height: 50vh;
+	padding-bottom: 3rem;
 }
 div[role='dialog'][data-state='open'] > div {
 	display: flex;

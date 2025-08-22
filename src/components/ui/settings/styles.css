@@ -38,41 +38,44 @@ button img {
 button:hover {
 	background-color: transparent;
 }
-div[role='dialog'][data-state='open'] {
+.settingsDrawerCont div[role='dialog'][data-state='open'] {
 	background-color: #373737;
 	color: #fff;
 }
-div[role='dialog'][data-state='open'] h2 {
+.settingsDrawerCont div[role='dialog'][data-state='open'] h2 {
 	font-weight: 400;
-	padding: 1rem 0rem;
+	padding: 20px 0;
 }
-div[role='dialog'][data-state='open'] > div:first-child {
+.settingsDrawerCont div[role='dialog'][data-state='open'] h2:after {
 	display: none;
 }
-div[role='dialog'][data-state='open'] > div {
+.settingsDrawerCont div[role='dialog'][data-state='open'] > div:first-child {
+	display: none;
+}
+.settingsDrawerCont div[role='dialog'][data-state='open'] > div {
 	max-width: 425px;
 }
-div[role='dialog'][data-state='open'] button {
+.settingsDrawerCont div[role='dialog'][data-state='open'] button {
 	outline: none;
 }
-div[role='dialog'][data-state='open'] button:hover,
-div[role='dialog'][data-state='open'] button:focus-within {
+.settingsDrawerCont div[role='dialog'][data-state='open'] button:hover,
+.settingsDrawerCont div[role='dialog'][data-state='open'] button:focus-within {
 	outline: none;
 }
-div[role='dialog'][data-state='open'] > div h2 {
+.settingsDrawerCont div[role='dialog'][data-state='open'] > div h2 {
 	width: 100%;
 	text-align: center;
 }
-div[role='dialog'][data-state='open'] > div h2::after {
+.settingsDrawerCont div[role='dialog'][data-state='open'] > div h2::after {
 	display: none;
 }
-div[role='dialog'][data-state='open'] .drawerFooter {
+.settingsDrawerCont div[role='dialog'][data-state='open'] .drawerFooter {
 	display: flex;
 	align-content: center;
 	flex-wrap: wrap;
 	width: 100%;
 }
-div[role='dialog'][data-state='open'] .drawerFooter button {
+.settingsDrawerCont div[role='dialog'][data-state='open'] .drawerFooter button {
 	width: fit-content;
 	padding: 8px 12px;
 	border: 1px solid #5d5d5d;

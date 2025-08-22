@@ -18,14 +18,14 @@ import ButtonSettings from '../buttons/settings/ButtonSettings.jsx';
 
 export function SettingsDrawer() {
 	return (
-		<Drawer>
+		<Drawer className='settingsDrawerCont'>
 			<DrawerTrigger asChild>
 				<div className='settings'>
 					<ButtonSettings />
 				</div>
 			</DrawerTrigger>
 			<DrawerContent>
-				<div className='mx-auto w-full max-w-sm'>
+				<div className='settingsDrawerCont'>
 					<DrawerHeader>
 						<DrawerTitle>Settings</DrawerTitle>
 					</DrawerHeader>

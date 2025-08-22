@@ -47,13 +47,13 @@ const data = [
 			{
 				title: 'Job Interview Rejection',
 				content:
-					"You didn't get a job you really wanted. Instead of thinking 'I'm not good enough' (old belief), you recognize that one rejection doesn't define your worth and there could be many factors involved (new belief).",
+					"You didn't get a job you really wanted.<br /><br /> Instead of thinking 'I'm not good enough' <b>(old belief)</b>, you recognize that one rejection doesn't define your worth and there could be many factors involved <b>(new belief)</b>.",
 				btnLabel: 'Reframe Rejection',
 			},
 			{
 				title: "Friend Didn't Text Back",
 				content:
-					"Your friend hasn't responded to your message.<br /><br />  Rather than assuming they're mad at you (old belief), you consider they might be busy or dealing with their own stuff (new belief).",
+					"Your friend hasn't responded to your message.<br /><br />Rather than assuming they're mad at you <b>(old belief)</b>, you consider they might be busy or dealing with their own stuff <b>(new belief)</b>.",
 				btnLabel: 'Question Assumptions',
 			},
 		],
@@ -67,14 +67,14 @@ const data = [
 					letter: 'C',
 					meaning: 'Cost',
 					definition:
-						"What's this behavior really costing you? Think beyond money - your relationships, health, self-respect",
+						"What's this behavior really costing you?<br /><br /> Think beyond money - your relationships, health, self-respect",
 					scenario: '',
 				},
 				{
 					letter: 'B',
 					meaning: 'Benefit',
 					definition:
-						'Be honest - what are you getting out of this behavior? There must be something, right?',
+						'Be honest - what are you getting out of this behavior?<br /><br /> There must be something, right?',
 					scenario: '',
 				},
 				{
@@ -92,13 +92,13 @@ const data = [
 			{
 				title: 'Binge Watching vs. Sleep',
 				content:
-					"Cost: <br /> Exhaustion, poor work performance, health issues.<br /> <br />  Benefit:<br />  Temporary escape, entertainment.<br /> <br />  Analysis: <br /> The short-term comfort isn't worth the long-term consequences to your wellbeing.",
+					"<b>Cost:</b> <br /> Exhaustion, poor work performance, health issues.<br /> <br />  <b>Benefit:</b><br />  Temporary escape, entertainment.<br /> <br />  <b>Analysis:</b> <br /> The short-term comfort isn't worth the long-term consequences to your wellbeing.",
 				btnLabel: 'Weigh It Out',
 			},
 			{
 				title: 'Avoiding Difficult Conversations',
 				content:
-					'Cost:<br />  Unresolved conflicts, built-up resentment, damaged relationships.<br /> <br />  Benefit:<br />  Temporary peace, avoiding confrontation. <br /> <br /> Analysis:<br />  The temporary comfort is creating bigger problems that will be harder to solve later.',
+					'<b>Cost:</b><br />  Unresolved conflicts, built-up resentment, damaged relationships.<br /> <br />  <b>Benefit:</b><br />  Temporary peace, avoiding confrontation. <br /> <br /> <b>Analysis:</b><br />  The temporary comfort is creating bigger problems that will be harder to solve later.',
 				btnLabel: 'Face the Truth',
 			},
 		],
@@ -112,52 +112,52 @@ const data = [
 					letter: 'D',
 					meaning: 'Deny or Delay',
 					definition:
-						'Just say "not right now" - you don\'t have to give in immediately. Urges have expiration dates',
+						'Just say "not right now" - you don\'t have to give in immediately.<br /><br /> Urges have expiration dates',
 					scenario: '',
 				},
 				{
 					letter: 'E',
 					meaning: 'Escape',
 					definition:
-						'Change your scenery! Sometimes the best thing you can do is physically remove yourself from temptation',
+						'Change your scenery!<br /><br /> Sometimes the best thing you can do is physically remove yourself from temptation',
 					scenario: '',
 				},
 				{
 					letter: 'A',
-					meaning: 'Avoid/Accept/Attack',
+					meaning: 'Avoid / Accept / Attack',
 					definition:
-						'Pick your battle strategy: dodge the trigger, accept the feeling will pass, or tackle it head-on',
+						'Pick your battle strategy:<br /><br /> dodge the trigger, accept the feeling will pass, or tackle it head-on',
 					scenario: '',
 				},
 				{
 					letter: 'D',
 					meaning: 'Distract',
 					definition:
-						'Redirect that mental energy somewhere else - call someone, go for a walk, binge a show',
+						'Redirect that mental energy somewhere else - <b><u>call someone</u>, <u>go for a walk</u>, <u>binge a show</u></b>',
 					scenario: '',
 				},
 				{
 					letter: 'S',
 					meaning: 'Substitute',
 					definition:
-						'Swap out the harmful habit for something that actually makes you feel good about yourself',
+						'Swap out the harmful habit for something that actually <b>makes you feel good about yourself</b>',
 					scenario: '',
 				},
 			],
 			explanation:
-				"Five solid moves you can make when cravings hit - because you've got options, and every craving eventually fades.",
+				"Five solid moves you can make when cravings hit - because you've got options, and <b><u>every craving eventually fades.</u></b>",
 		},
 		scenarios: [
 			{
 				title: 'Craving Alcohol at a Party',
 				content:
-					"Delay:<br />  'I'll wait 15 minutes first.' Escape: Step outside or go to the bathroom.<br /> <br />  Accept:<br />  'This urge will pass.'<br /> <br />  Distract:<br />  Start a conversation with someone new.<br /> <br />  Substitute:<br />  Grab a mocktail or soda instead.",
+					"<b>Delay:</b><br />  'I'll wait 15 minutes first.' Escape: Step outside or go to the bathroom.<br /> <br />  <b>Accept:</b><br />  'This urge will pass.'<br /> <br />  <b>Distract:</b><br />  Start a conversation with someone new.<br /> <br />  <b>Substitute:</b><br />  Grab a mocktail or soda instead.",
 				btnLabel: 'Beat the Craving',
 			},
 			{
 				title: 'Wanting to Text an Ex',
 				content:
-					"Delay:<br />  'I'll wait until tomorrow.'<br /> <br />  Escape:<br /> Leave your phone in another room.<br /> <br />  Avoid: <br /> Delete their number (again).<br /> <br />  Distract: <br /> Call a friend or watch funny videos. <br /> <br /> Substitute:<br />  Write in a journal instead.<br /> <br /> ",
+					"<b>Delay:</b><br />  'I'll wait until tomorrow.'<br /> <br />  Escape:<br /> Leave your phone in another room.<br /> <br />  <b>Avoid:</b> <br /> Delete their number (again).<br /> <br />  Distract: <br /> Call a friend or watch funny videos. <br /> <br /> <b>Substitute:</b><br />  Write in a journal instead.<br /> <br /> ",
 				btnLabel: 'Resist the Urge',
 			},
 		],
@@ -244,14 +244,14 @@ const data = [
 					letter: 'A',
 					meaning: 'Angry',
 					definition:
-						"Are you pissed off about something? Anger can hijack your judgment if you don't deal with it",
+						"Are you pissed off about something?<br /><br /> Anger can hijack your judgment if you don't deal with it",
 					scenario: '',
 				},
 				{
 					letter: 'L',
 					meaning: 'Lonely',
 					definition:
-						'Feeling disconnected from people? Isolation makes everything harder and cravings stronger',
+						'Feeling disconnected from people?<br /><br /> Isolation makes everything harder and cravings stronger',
 					scenario: '',
 				},
 				{
@@ -269,7 +269,7 @@ const data = [
 			{
 				title: 'Afternoon Craving Attack',
 				content:
-					"You're suddenly craving your old habit at 3 PM.<br /> <br />  Check: <br /> Haven't eaten since breakfast (Hungry),<br />  frustrated with work project (Angry),<br /> been alone all day (Lonely), <br /> only got 4 hours sleep (Tired). <br /> <br /> Solution: <br /> Eat a healthy snack, take a walk, call a friend, plan an early bedtime.<br /> <br /> ",
+					"You're suddenly craving your old habit at 3 PM.<br /> <br />  <b>Check:</b> <br /> Haven't eaten since breakfast <u>(Hungry)</u>,<br />  frustrated with work project <u>(Angry)</u>,<br /> been alone all day <u>(Lonely)</u>, <br /> only got 4 hours sleep <u>(Tired)</u>. <br /> <br /> <b>Solution:</b> <br /> Eat a healthy snack, take a walk, call a friend, plan an early bedtime.<br /> <br /> ",
 				btnLabel: 'Check HALT',
 			},
 			{
@@ -289,14 +289,14 @@ const data = [
 					letter: 'H',
 					meaning: 'Helping',
 					definition:
-						'Do something for someone else - it gets you out of your own head and feels amazing',
+						'Do something for someone else - it gets your thinking out of your own head and <u>feels amazing</u>',
 					scenario: '',
 				},
 				{
 					letter: 'O',
 					meaning: 'Others',
 					definition:
-						"Build real connections with people who matter to you - isolation is recovery's enemy",
+						"Build real connections with people who matter to you - <b>isolation is recovery's enemy</b>",
 					scenario: '',
 				},
 				{
@@ -310,7 +310,7 @@ const data = [
 					letter: 'E',
 					meaning: 'Esteem',
 					definition:
-						'Do things that make you proud of yourself - small wins count too',
+						'Do things that make you <b>proud of yourself - small wins count too</b>',
 					scenario: '',
 				},
 			],
@@ -321,13 +321,13 @@ const data = [
 			{
 				title: 'Feeling Hopeless and Isolated',
 				content:
-					'Volunteer at a local food bank (Helping),<br />  join a recovery support group (Others), <br /> remember your goal of being present for your kids (Purpose), <br /> celebrate 30 days clean (Esteem). <br /> <br /> Each action builds on the others to create genuine hope.',
+					'Volunteer at a local food bank <u>(Helping)</u>,<br />  join a recovery support group <u>(Others)</u>, <br /> remember your goal of being present for your kids <u>(Purpose)</u>, <br /> celebrate 30 days clean <u>(Esteem)</u>. <br /> <br /> Each action builds on the others <b>to create genuine hope.</b>',
 				btnLabel: 'Build Hope',
 			},
 			{
 				title: 'Lost Sense of Direction',
 				content:
-					"Help a neighbor with groceries (Helping),<br />  reach out to old friends you trust (Others), explore going back to school (Purpose), acknowledge you've been handling stress better lately (Esteem). <br /> <br /> Small steps toward a meaningful life.",
+					"Help a neighbor with groceries <u>(Helping)</u>,<br />  reach out to old friends you trust <u>(Others)</u>, explore going back to school <u>(Purpose)</u>, acknowledge you've been handling stress better lately <u>(Esteem)</u>. <br /> <br /> <b>Small steps toward a meaningful life.</b>",
 				btnLabel: 'Find Direction',
 			},
 		],
@@ -366,7 +366,7 @@ const data = [
 			{
 				title: 'Career vs. Family Time Decision',
 				content:
-					'Job offers overtime but kids have a recital. <br /> <br /> Your hierarchy: Family relationships, personal health, financial stability, career advancement. <br /> Since family tops your list, the choice becomes clear - attend the recital.',
+					'Your job offers overtime but the kids have a recital. <br /> <br /> Your hierarchy: Family relationships, personal health, financial stability, career advancement. <br /> Since family tops your list, the choice becomes clear - attend the recital.',
 				btnLabel: 'Choose Values',
 			},
 			{

@@ -17,11 +17,11 @@ import './styles.css';
 
 function ScenarioDialog({ btnLabel, title, content }) {
 	return (
-		<Dialog>
+		<Dialog className='ScenarioDialogCont'>
 			<DialogTrigger asChild>
 				<Button variant='outline'>{btnLabel}</Button>
 			</DialogTrigger>
-			<DialogContent className='sm:max-w-[425px]'>
+			<DialogContent className='ScenarioDialog'>
 				<DialogHeader>
 					<DialogTitle>{title}</DialogTitle>
 					<DialogDescription dangerouslySetInnerHTML={{ __html: content }} />

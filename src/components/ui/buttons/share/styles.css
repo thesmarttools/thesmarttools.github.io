@@ -1,1 +1,5 @@
 @import '../buttonStyles.css';
+.share-icon button {
+	border: none;
+	outline: none;
+}
