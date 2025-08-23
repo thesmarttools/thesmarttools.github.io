@@ -227,7 +227,7 @@ div[data-state='open'] .AccordionContentText {
 .AcronymDefinition {
 	width: 90%;
 	margin: 0.5rem auto;
-	color: #bdbdbd;
+	color: var(--primary);
 	text-align: left;
 }
 .AccordionItemFavourite {
