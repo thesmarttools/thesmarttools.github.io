@@ -1,4 +1,9 @@
 import { Button } from '@/components/ui/button';
+import {
+	Tooltip,
+	TooltipContent,
+	TooltipTrigger,
+} from '@/components/ui/tooltip';
 import iconIncreaseFontSize from '/src/assets/text_increase_24dp.svg';
 import iconDescreaseFontSize from '/src/assets/text_decrease_24dp.svg';
 import './buttonStyles.css';
@@ -44,7 +49,7 @@ const setBaseFontSize = (size) => {
 	console.log('baseFontSizeValue', baseFontSizeValue);
 };
 
-const ButtonFontSize = ({ size }) => {
+const ButtonFontSize = ({ size, label }) => {
 	const icon =
 		size === 'increase' ? iconIncreaseFontSize : iconDescreaseFontSize;
 	const alt = size === 'increase' ? 'increase font size' : 'decrease font size';
@@ -56,6 +61,7 @@ const ButtonFontSize = ({ size }) => {
 			<Button variant='outline'>
 				<img src={icon} alt={alt} />
 			</Button>
+			<div>{label}</div>
 		</div>
 	);
 };
@@ -82,5 +88,6 @@ applyStoredScale();
 
 ButtonFontSize.propTypes = {
 	size: PropTypes.string.isRequired, // or PropTypes.oneOf(['large', 'small'])
+	label: PropTypes.string,
 };
 export default ButtonFontSize;

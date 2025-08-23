@@ -35,7 +35,7 @@ function App() {
 			<div className='app'>
 				<div className='main'>
 					<div className='inner'>
-						<SettingsDrawer className='settingsDrawerCont' />
+						<SettingsDrawer />
 
 						<div className='header'>
 							<div>

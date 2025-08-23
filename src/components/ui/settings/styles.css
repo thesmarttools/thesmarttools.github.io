@@ -38,46 +38,61 @@ button img {
 button:hover {
 	background-color: transparent;
 }
-.settingsDrawerCont div[role='dialog'][data-state='open'] {
+[data-vaul-overlay][data-vaul-snap-points-overlay='true'] {
+	opacity: 0.75;
+}
+.settingsDrawerCont {
+	background-color: #373737;
+}
+div.DrawerContent[role='dialog'][data-state='open'] {
 	background-color: #373737;
 	color: #fff;
+	padding-bottom: 0;
+	min-height: 40vh;
 }
-.settingsDrawerCont div[role='dialog'][data-state='open'] h2 {
+div.DrawerContent[role='dialog'][data-state='open']
+	.settingsDrawerCont
+	> div:first-child {
+	display: none;
+}
+div.DrawerContent[role='dialog'][data-state='open'] h2 {
 	font-weight: 400;
 	padding: 20px 0;
 }
-.settingsDrawerCont div[role='dialog'][data-state='open'] h2:after {
+div.DrawerContent[role='dialog'][data-state='open'] h2:after {
 	display: none;
 }
-.settingsDrawerCont div[role='dialog'][data-state='open'] > div:first-child {
+div.DrawerContent[role='dialog'][data-state='open'] > div:first-child {
 	display: none;
 }
-.settingsDrawerCont div[role='dialog'][data-state='open'] > div {
+div.DrawerContent[role='dialog'][data-state='open'] > div {
 	max-width: 425px;
 }
-.settingsDrawerCont div[role='dialog'][data-state='open'] button {
+div.DrawerContent[role='dialog'][data-state='open'] button {
 	outline: none;
 }
-.settingsDrawerCont div[role='dialog'][data-state='open'] button:hover,
-.settingsDrawerCont div[role='dialog'][data-state='open'] button:focus-within {
+div.DrawerContent[role='dialog'][data-state='open'] button:hover,
+div.DrawerContent[role='dialog'][data-state='open'] button:focus-within {
 	outline: none;
 }
-.settingsDrawerCont div[role='dialog'][data-state='open'] > div h2 {
+div.DrawerContent[role='dialog'][data-state='open'] > div h2 {
 	width: 100%;
 	text-align: center;
-}
-.settingsDrawerCont div[role='dialog'][data-state='open'] > div h2::after {
 	display: none;
 }
-.settingsDrawerCont div[role='dialog'][data-state='open'] .drawerFooter {
+div.DrawerContent[role='dialog'][data-state='open'] > div h2::after {
+	display: none;
+}
+div.DrawerContent[role='dialog'][data-state='open'] .drawerFooter {
 	display: flex;
 	align-content: center;
 	flex-wrap: wrap;
 	width: 100%;
 }
-.settingsDrawerCont div[role='dialog'][data-state='open'] .drawerFooter button {
+div.DrawerContent[role='dialog'][data-state='open'] .drawerFooter button {
 	width: fit-content;
 	padding: 8px 12px;
 	border: 1px solid #5d5d5d;
 	outline: none;
+	background-color: transparent;
 }

@@ -19,8 +19,11 @@
 .scenariosGroup button:hover {
 	font-weight: 600;
 }
-
-div[role='dialog'][data-state='open'] button {
+.scenarioDialog {
+	overflow-y: scroll;
+	max-height: 100vh;
+}
+.scenarioDialog div[role='dialog'][data-state='open'] button {
 	background-color: transparent;
 	transform: scale(1);
 	/* padding: 7px 12px; */

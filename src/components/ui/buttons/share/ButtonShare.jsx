@@ -1,6 +1,7 @@
 import ShareIcon from './ShareIcon';
 import './styles.css';
-const ButtonShare = () => {
+import PropTypes from 'prop-types';
+const ButtonShare = ({ label }) => {
 	const handleShare = async () => {
 		try {
 			await navigator.share({
@@ -18,7 +19,11 @@ const ButtonShare = () => {
 			<button onClick={handleShare}>
 				<ShareIcon />
 			</button>
+			<div>{label}</div>
 		</div>
 	);
+};
+ButtonShare.propTypes = {
+	label: PropTypes.string,
 };
 export default ButtonShare;

@@ -1,6 +1,7 @@
 import UpdateIcon from './UpdateIcon';
 import './styles.css';
-const ButtonUpdate = () => {
+import PropTypes from 'prop-types';
+const ButtonUpdate = ({ label }) => {
 	const handleClick = async () => {
 		location.reload();
 	};
@@ -12,7 +13,11 @@ const ButtonUpdate = () => {
 					<div dangerouslySetInnerHTML={{ __html: UpdateIcon }} />
 				</div>
 			</button>
+			<div>{label}</div>
 		</div>
 	);
+};
+ButtonUpdate.propTypes = {
+	label: PropTypes.string,
 };
 export default ButtonUpdate;
