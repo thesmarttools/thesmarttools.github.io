@@ -5,6 +5,7 @@ import './styles.css';
 import iconDarkBg from './../../../icons/iconDarkBg';
 import iconLightBg from './../../../icons/iconLightBg';
 import iconSystemBg from './../../../icons/iconSystemBg';
+
 export function BackgroundOptions() {
 	return (
 		<div className='backgroundOptions'>

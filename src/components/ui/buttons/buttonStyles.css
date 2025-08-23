@@ -1,8 +1,9 @@
+@import '@/src/globals.css';
 .btn button {
 	all: unset;
 }
 .btn svg path {
-	fill: #fff;
+	fill: var(--primary);
 }
 .btn {
 	width: 60px;

@@ -15,7 +15,8 @@ export function CheckboxOffline() {
 			<div>
 				<p>
 					By clicking this checkbox, you will be able to use this app offline
-					but you may to use the update button to get the latest version.
+					but you will need to use the update button to get the latest version
+					when they are released.
 				</p>
 			</div>
 		</div>

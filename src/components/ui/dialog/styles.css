@@ -1,3 +1,4 @@
+@import '@/src/globals.css';
 .scenarios .scenariosGroup {
 	width: 90%;
 	margin: 0 auto;
@@ -14,12 +15,12 @@
 	transition: all 0.3s ease-in-out;
 	display: flex;
 	outline: 1px solid #ababab;
-	color: #bcb6ea;
+	color: var(--lightBlue);
 }
 .scenariosGroup button:hover {
 	font-weight: 600;
 	background-color: transparent;
-	color: #fff;
+	color: var(--primary);
 }
 .scenarioDialog {
 	overflow-y: scroll;
@@ -34,26 +35,26 @@
 	transition: all 0.3s ease-in-out;
 	display: flex;
 	outline: 1px solid #ababab;
-	color: #fff;
+	color: var(--primary);
 }
 
 div[role='dialog'][data-state='open'] button:hover {
 	background-color: transparent;
-	color: #fff;
-	outline: 1px solid #fff;
+	color: var(--primary);
+	outline: 1px solid var(--primary);
 }
 div[role='dialog'][data-state='open'] button:focus,
 div[role='dialog'][data-state='open'] button:active,
 div[role='dialog'][data-state='open'] button:focus-within {
 	/* border: none; */
-	outline: 1px solid #fff;
+	outline: 1px solid var(--primary);
 	box-shadow: none;
 }
 div[role='dialog'][data-state='open'] {
-	background-color: #1b869e;
+	background-color: var(--blueBackground);
 	border: none;
 	/* //	border: 1px solid #ababab; */
-	color: #fff;
+	color: var(--primary);
 	min-height: 50vh;
 	padding-bottom: 3rem;
 }
@@ -61,7 +62,7 @@ div[role='dialog'][data-state='open'] > div {
 	display: flex;
 	flex-direction: column;
 	row-gap: 1rem;
-	color: #fff;
+	color: var(--primary);
 	margin-top: 2rem;
 }
 div[role='dialog'][data-state='open'] > div h2 {
@@ -74,11 +75,11 @@ div[role='dialog'][data-state='open'] > div h2::after {
 	display: inline-block;
 	width: 60%;
 	height: 1px;
-	background-color: #bcb6ea;
+	background-color: var(--lightBlue);
 	margin: 0 auto;
 }
 div[role='dialog'][data-state='open'] > div > * {
-	color: #fff;
+	color: var(--primary);
 	font-size: 1.1rem;
 	line-height: 1.4;
 }

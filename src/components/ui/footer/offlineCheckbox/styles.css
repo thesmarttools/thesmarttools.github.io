@@ -8,7 +8,10 @@
 .offlineCheckboxCont p {
 	font-size: 0.65rem;
 	text-align: center;
-	color: #ccc;
+	color: var(--lightGrey);
+}
+.light .offlineCheckboxCont p {
+	color: var(--primary);
 }
 #offlineCheckbox {
 	width: 20px;
@@ -20,7 +23,7 @@
 
 #offlineCheckbox[data-state='checked'] {
 	background: transparent;
-	border: 1px solid #fff;
+	border: 1px solid var(--primary);
 }
 #offlineCheckbox[data-state='unchecked'] {
 	background: transparent;
@@ -31,13 +34,13 @@
 	height: 20px;
 	margin-top: -3px;
 	stroke-width: 4px;
-	stroke: #fff;
+	stroke: var(--primary);
 }
 .offlineCheckboxCont .option {
 	display: flex;
 	column-gap: 0.5rem;
-	color: #fff;
+	color: var(--primary);
 }
 .offlineCheckboxCont label {
-	color: #fff;
+	color: var(--primary);
 }

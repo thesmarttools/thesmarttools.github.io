@@ -4,11 +4,9 @@ import {
 	Drawer,
 	DrawerClose,
 	DrawerContent,
-	DrawerDescription,
 	DrawerFooter,
-	DrawerHeader,
-	DrawerTitle,
 	DrawerTrigger,
+	DrawerTitle,
 } from '@/components/ui/drawer';
 import './styles.css';
 import ButtonFontSize from '../buttons/ButtonFontSize.jsx';
@@ -26,6 +24,7 @@ export function FontSizeDrawer() {
 			</DrawerTrigger>
 			<div className='settingsDrawerMain'>
 				<DrawerContent className='DrawerContent'>
+					<DrawerTitle className='hide'>TItle</DrawerTitle>
 					<div className='settingsDrawerCont'>
 						<div className='settingsDrawer'>
 							<ButtonFontSize size='decreasse' label='Smaller' />

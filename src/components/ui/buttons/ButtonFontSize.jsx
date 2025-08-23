@@ -4,8 +4,8 @@ import { Button } from '@/components/ui/button';
 // 	TooltipContent,
 // 	TooltipTrigger,
 // } from '@/components/ui/tooltip';
-import iconIncreaseFontSize from '/src/assets/text_increase_24dp.svg';
-import iconDescreaseFontSize from '/src/assets/text_decrease_24dp.svg';
+import iconIncreaseFontSize from '/src/components/icons/iconFontSizeIncrease.jsx';
+import iconDescreaseFontSize from '/src/components/icons/iconFontSizeDecrease.jsx';
 import './buttonStyles.css';
 import PropTypes from 'prop-types';
 
@@ -33,7 +33,6 @@ const setBaseFontSize = (size) => {
 	if (newBaseFontSize <= minFontSize) rootFontSize = minFontSize;
 	document.documentElement.style.fontSize = newBaseFontSize + 'px';
 	localStorage.setItem(storageKeyBaseFontSize, newBaseFontSize.toString());
-	console.log('baseFontSizeValue', newBaseFontSize);
 };
 
 const ButtonFontSize = ({ size, label }) => {
@@ -46,7 +45,7 @@ const ButtonFontSize = ({ size, label }) => {
 	return (
 		<div className='btn' onClick={handleClick}>
 			<Button variant='outline'>
-				<img src={icon} alt={alt} />
+				<div dangerouslySetInnerHTML={{ __html: icon }} alt={alt} />
 			</Button>
 			<div>{label}</div>
 		</div>

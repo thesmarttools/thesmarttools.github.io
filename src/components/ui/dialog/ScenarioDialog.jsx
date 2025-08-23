@@ -22,8 +22,8 @@ function ScenarioDialog({ btnLabel, title, content }) {
 				<Button variant='outline'>{btnLabel}</Button>
 			</DialogTrigger>
 			<DialogContent className='scenarioDialog'>
+				<DialogTitle>{title}</DialogTitle>
 				<DialogHeader>
-					<DialogTitle>{title}</DialogTitle>
 					<DialogDescription dangerouslySetInnerHTML={{ __html: content }} />
 				</DialogHeader>
 			</DialogContent>

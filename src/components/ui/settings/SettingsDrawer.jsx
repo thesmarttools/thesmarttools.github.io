@@ -4,16 +4,12 @@ import {
 	Drawer,
 	DrawerClose,
 	DrawerContent,
-	DrawerDescription,
 	DrawerFooter,
-	DrawerHeader,
-	DrawerTitle,
 	DrawerTrigger,
+	DrawerTitle,
 } from '@/components/ui/drawer';
 import './styles.css';
-import ButtonFontSize from '../buttons/ButtonFontSize.jsx';
-import ButtonShare from '../buttons/share/ButtonShare.jsx';
-import ButtonUpdate from '../buttons/update/ButtonUpdate.jsx';
+
 import ButtonSettings from '../buttons/settings/ButtonSettings.jsx';
 import CheckboxOffline from '../footer/offlineCheckbox/OfflineCheckbox.jsx';
 import BackgroundOptions from '../footer/background/BackgroundOptions';
@@ -28,9 +24,10 @@ export function SettingsDrawer() {
 			</DrawerTrigger>
 			<div className='settingsDrawerMain'>
 				<DrawerContent className='DrawerContent'>
+					<DrawerTitle className='hide'>TItle</DrawerTitle>
 					<div className='settingsDrawerCont'>
 						<div className='settingsDrawer'>
-							<div>Background</div>
+							<div>Theme</div>
 							<BackgroundOptions />
 						</div>
 						<div className='settingsDrawer'>

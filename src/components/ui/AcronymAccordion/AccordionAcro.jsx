@@ -10,6 +10,7 @@ import './scenariosStyles.css';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import data from '../../../data/data.js';
+import Favourite from '../favourite/Favourite.jsx';
 
 const AccordionDemo = () => {
 	return (
@@ -56,7 +57,7 @@ const AccordionTrigger = React.forwardRef(
 				{...props}
 				ref={forwardedRef}
 			>
-				<AccordionItemFavourite id={value} />
+				<Favourite id={value} />
 				<div className='AccordionTriggerTitle'>{children}</div>
 				<ChevronDownIcon className='AccordionChevron' aria-hidden />
 			</Accordion.Trigger>
@@ -131,38 +132,38 @@ AccordionContent.propTypes = {
 
 AccordionContent.displayName = 'AccordionContent';
 
-const AccordionItemFavourite = ({ id }) => {
-	const [favourite, setFavourite] = React.useState(() => {
-		const storedFavourite = localStorage.getItem(`favourite-${id}`);
-		return storedFavourite; // === 'true';
-	});
+// const AccordionItemFavourite = ({ id }) => {
+// 	const [favourite, setFavourite] = React.useState(() => {
+// 		const storedFavourite = localStorage.getItem(`favourite-${id}`);
+// 		return storedFavourite; // === 'true';
+// 	});
 
-	const imgSrc = favourite ? starFilled : starOutline;
-	const imgClassName = favourite ? 'favourite chosen' : 'favourite';
+// 	const imgSrc = favourite ? starFilled : starOutline;
+// 	const imgClassName = favourite ? 'favourite chosen' : 'favourite';
 
-	React.useEffect(() => {
-		const storedFavourite = localStorage.getItem(`favourite-${id}`);
-		if (storedFavourite !== null) {
-			setFavourite(storedFavourite === 'true');
-		}
-	}, [id]);
+// 	React.useEffect(() => {
+// 		const storedFavourite = localStorage.getItem(`favourite-${id}`);
+// 		if (storedFavourite !== null) {
+// 			setFavourite(storedFavourite === 'true');
+// 		}
+// 	}, [id]);
 
-	const handleClick = (e) => {
-		e.stopPropagation();
-		const newFavourite = !favourite;
-		localStorage.setItem(`favourite-${id}`, newFavourite.toString());
-		setFavourite(newFavourite);
-	};
+// 	const handleClick = (e) => {
+// 		e.stopPropagation();
+// 		const newFavourite = !favourite;
+// 		localStorage.setItem(`favourite-${id}`, newFavourite.toString());
+// 		setFavourite(newFavourite);
+// 	};
 
-	return (
-		<div className='AccordionItemFavourite' onClick={handleClick}>
-			<img src={imgSrc} className={imgClassName} alt='starOutline' />
-		</div>
-	);
-};
-AccordionItemFavourite.propTypes = {
-	id: PropTypes.string,
-};
-AccordionItemFavourite.displayName = 'AccordionItemFavourite';
+// 	return (
+// 		<div className='AccordionItemFavourite' onClick={handleClick}>
+// 			<img src={imgSrc} className={imgClassName} alt='starOutline' />
+// 		</div>
+// 	);
+// };
+// AccordionItemFavourite.propTypes = {
+// 	id: PropTypes.string,
+// };
+// AccordionItemFavourite.displayName = 'AccordionItemFavourite';
 
 export default AccordionDemo;

@@ -1,3 +1,4 @@
+@import '@/src/globals.css';
 @import '../buttonStyles.css';
 .share-icon button {
 	border: none;

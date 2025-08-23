@@ -1,7 +1,7 @@
 @import '@radix-ui/colors/black-alpha.css';
 @import '@radix-ui/colors/mauve.css';
 @import '@radix-ui/colors/violet.css';
-
+@import '@/src/globals.css';
 /* reset */
 
 h3 {
@@ -79,11 +79,11 @@ div[data-state='open'] .AccordionContentText {
 	width: 100%;
 	word-break: break-all;
 	word-wrap: break-word;
-	color: #bcb6ea;
+	color: var(--lightBlue);
 }
 .AccordionTrigger:hover {
 	background-color: transparent;
-	color: #8dff71;
+	color: var(--yellow);
 }
 .AccordionTrigger .title {
 	flex-grow: 2;
@@ -113,6 +113,7 @@ div[data-state='open'] .AccordionContentText {
 	row-gap: 0.5rem;
 	max-width: 90%;
 	margin: calc(0.25rem / var(--user-scale)) 20px;
+	/* background-color: var(--lighGreyBg); */
 }
 .Acronym-part {
 	display: flex;
@@ -128,7 +129,7 @@ div[data-state='open'] .AccordionContentText {
 	text-align: left;
 
 	margin-left: 45px;
-	color: #fff;
+	color: var(--primary);
 }
 .Acronym-letter {
 	font-weight: 800;
@@ -152,13 +153,13 @@ div[data-state='open'] .AccordionContentText {
 	word-break: break-word;
 	display: inline-block;
 
-	color: rgb(141, 255, 113);
+	color: var(--yellow);
 }
 .Acronym-letter-meaning::first-letter {
 	font-weight: 800;
 	font-size: 1.75rem;
 
-	color: #bcb6ea;
+	color: var(--lightBlue);
 	font-weight: 800;
 	line-height: 1;
 	/* letter-spacing: 10px; */
@@ -169,7 +170,7 @@ div[data-state='open'] .AccordionContentText {
 	margin: 0;
 }
 .AccordionItem[data-state='open'] {
-	background-color: rgba(50, 50, 50, 0.3);
+	background-color: var(--lighGreyBg);
 	margin-bottom: 1rem;
 	/* padding: 1rem 0; */
 }
@@ -177,7 +178,7 @@ div[data-state='open'] .AccordionContentText {
 	width: 100%;
 	word-break: break-all;
 	word-wrap: break-word;
-	color: rgb(141, 255, 113);
+	color: var(--yellow);
 }
 .AccordionHeader:has(.AccordionTrigger[data-state='open']) {
 	.AccordionTrigger {
@@ -189,7 +190,7 @@ div[data-state='open'] .AccordionContentText {
 }
 .AccordionHeader:has(.AccordionTrigger[data-state='closed']) {
 	.AccordionTrigger {
-		color: #fff;
+		color: var(--primary);
 		height: 100%;
 	}
 }
@@ -215,7 +216,7 @@ div[data-state='open'] .AccordionContentText {
 	transform: rotate(180deg);
 }
 .AccordionTrigger[data-state='open'] {
-	color: #8dff71;
+	color: var(--yellow);
 	justify-content: space-between;
 	transition: all 0.3s ease-out;
 }

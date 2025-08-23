@@ -1,10 +1,10 @@
+@import '@/src/globals.css';
 .btn button {
 	all: unset;
 }
 .settings {
 	display: flex;
 	width: 40px;
-	margin-top: 16px;
 }
 .fontSize.settings {
 	margin-top: 0px;
@@ -57,7 +57,7 @@ button:hover {
 	opacity: 0.75;
 }
 .settingsDrawerCont {
-	background-color: #373737;
+	background-color: var(--background);
 	display: flex;
 	flex-direction: column;
 	row-gap: 1rem;
@@ -65,8 +65,8 @@ button:hover {
 	width: 100%;
 }
 div.DrawerContent[role='dialog'][data-state='open'] {
-	background-color: #373737;
-	color: #fff;
+	background-color: var(--background);
+	color: var(--primary);
 	padding-bottom: 0;
 	min-height: 30vh;
 	/* height: 60vh; */
@@ -92,6 +92,8 @@ div.DrawerContent[role='dialog'][data-state='open'] > div {
 }
 div.DrawerContent[role='dialog'][data-state='open'] button {
 	outline: none;
+	background: transparent;
+	border: 1px solid var(--primary);
 }
 div.DrawerContent[role='dialog'][data-state='open'] button:hover,
 div.DrawerContent[role='dialog'][data-state='open'] button:focus-within {
