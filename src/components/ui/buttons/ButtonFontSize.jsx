@@ -9,44 +9,45 @@ import iconDescreaseFontSize from '/src/assets/text_decrease_24dp.svg';
 import './buttonStyles.css';
 import PropTypes from 'prop-types';
 
-const stepFontSizePx = 2;
-const stepScale = 0.2;
-//const rootStyles = getComputedStyle(document.documentElement);
-const minScale = 1;
-const maxScale = 2.5;
-const storageKey = 'fontSizeScale';
+const stepFontSizePx = 1;
+const storageKeyBaseFontSize = 'baseFontSize';
+let rootFontSize = 16;
+const minFontSize = 12;
+const maxFontSize = 34;
 
-const getStoredScale = () => {
-	const storedScale = localStorage.getItem(storageKey);
-	return storedScale ? parseFloat(storedScale) : 1;
+const getStoredBaseFontSize = () => {
+	const storedBaseFontSize = localStorage.getItem(storageKeyBaseFontSize);
+	return storedBaseFontSize ? storedBaseFontSize : rootFontSize;
 };
 
 const setBaseScale = (size) => {
-	console.log('setBaseScale', size);
-	let curBaseScale = getStoredScale();
-
-	const newScale =
-		size === 'increase' ? curBaseScale + stepScale : curBaseScale - stepScale;
-	if (newScale >= minScale && newScale <= maxScale) {
-		setBaseFontSize(size);
-	}
-	const newBaseScale = Math.min(Math.max(newScale, minScale), maxScale);
-	console.log('newBaseScale', newBaseScale);
-
-	document.documentElement.style.setProperty('--user-scale', newBaseScale);
-	localStorage.setItem(storageKey, newBaseScale.toString());
+	// console.log('setBaseScale', size);
+	// let curBaseScale = getStoredScale();
+	// const newScale =
+	// 	size === 'increase' ? curBaseScale + stepScale : curBaseScale - stepScale;
+	// if (newScale >= minScale && newScale <= maxScale) {
+	// 	setBaseFontSize(size);
+	// }
+	// const newBaseScale = Math.min(Math.max(newScale, minScale), maxScale);
+	// //console.log('newBaseScale', newBaseScale);
+	// document.documentElement.style.setProperty('--user-scale', newBaseScale);
+	// localStorage.setItem(storageKey, newBaseScale.toString());
 };
 
 const setBaseFontSize = (size) => {
-	let baseFontSizeValue = parseFloat(
-		getComputedStyle(document.documentElement).fontSize
-	);
-	baseFontSizeValue =
+	rootFontSize =
 		size === 'increase'
-			? baseFontSizeValue + stepFontSizePx
-			: baseFontSizeValue - stepFontSizePx;
-	document.documentElement.style.fontSize = baseFontSizeValue + 'px';
-	console.log('baseFontSizeValue', baseFontSizeValue);
+			? rootFontSize + stepFontSizePx
+			: rootFontSize - stepFontSizePx;
+	const newBaseFontSize = Math.min(
+		Math.max(rootFontSize, minFontSize),
+		maxFontSize
+	);
+	if (newBaseFontSize >= maxFontSize) rootFontSize = maxFontSize;
+	if (newBaseFontSize <= minFontSize) rootFontSize = minFontSize;
+	document.documentElement.style.fontSize = newBaseFontSize + 'px';
+	localStorage.setItem(storageKeyBaseFontSize, newBaseFontSize.toString());
+	console.log('baseFontSizeValue', newBaseFontSize);
 };
 
 const ButtonFontSize = ({ size, label }) => {
@@ -54,7 +55,7 @@ const ButtonFontSize = ({ size, label }) => {
 		size === 'increase' ? iconIncreaseFontSize : iconDescreaseFontSize;
 	const alt = size === 'increase' ? 'increase font size' : 'decrease font size';
 	const handleClick = () => {
-		setBaseScale(size);
+		setBaseFontSize(size);
 	};
 	return (
 		<div className='btn' onClick={handleClick}>
@@ -67,21 +68,10 @@ const ButtonFontSize = ({ size, label }) => {
 };
 
 const applyStoredScale = () => {
-	const storedScale = getStoredScale();
-	console.log('storedScale', storedScale);
-	if (storedScale) {
-		if (storedScale >= minScale && storedScale <= maxScale) {
-			let baseFontSizeValue = parseFloat(
-				getComputedStyle(document.documentElement).fontSize
-			);
-			console.log('baseFontSizeValue', baseFontSizeValue);
-			baseFontSizeValue = Math.floor(baseFontSizeValue * storedScale);
-			document.documentElement.style.fontSize = baseFontSizeValue + 'px';
-			document.documentElement.style.setProperty('--user-scale', storedScale);
-			console.log('baseFontSizeValue', baseFontSizeValue);
-			//setBaseFontSize(size);
-		}
-	}
+	const storedBaseFontSize = getStoredBaseFontSize();
+
+	storedBaseFontSize &&
+		(document.documentElement.style.fontSize = storedBaseFontSize + 'px');
 };
 
 applyStoredScale();

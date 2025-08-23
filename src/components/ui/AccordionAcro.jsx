@@ -106,7 +106,7 @@ const AccordionContent = React.forwardRef(
 						{children?.acronyms?.map((acronym, index) => (
 							<div className='Acronym-part' key={index}>
 								<div className='Acronym-letter-group'>
-									<div className='Acronym-letter'>{acronym.letter}</div>
+									{/* <div className='Acronym-letter'>{acronym.letter}</div> */}
 									<div
 										className='Acronym-letter-meaning'
 										dangerouslySetInnerHTML={{ __html: acronym.meaning }}

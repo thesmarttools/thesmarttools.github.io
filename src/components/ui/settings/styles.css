@@ -49,6 +49,7 @@ div.DrawerContent[role='dialog'][data-state='open'] {
 	color: #fff;
 	padding-bottom: 0;
 	min-height: 40vh;
+	height: 40vh;
 }
 
 div.DrawerContent[role='dialog'][data-state='open'] h2 {
@@ -62,7 +63,9 @@ div.DrawerContent[role='dialog'][data-state='open'] > div:first-child {
 	display: none;
 }
 div.DrawerContent[role='dialog'][data-state='open'] > div {
-	max-width: 425px;
+	display: flex;
+	row-gap: 10px;
+	margin-top: 40px;
 }
 div.DrawerContent[role='dialog'][data-state='open'] button {
 	outline: none;
