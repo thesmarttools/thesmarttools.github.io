@@ -7,6 +7,7 @@ import appleWhiteLogo from './assets/Apple_logo_white_30x30.svg';
 import AccordionAcro from './components/ui/AcronymAccordion/AccordionAcro.jsx';
 
 import SettingsDrawer from './components/ui/settings/SettingsDrawer.jsx';
+import FontSizeDrawer from './components/ui/settings/FontSIzeDrawer.jsx';
 import FooterMetadata from './components/ui/footer/FooterMetadata.jsx';
 
 // if ('serviceWorker' in navigator) {
@@ -37,7 +38,7 @@ function App() {
 				<div className='main'>
 					<div className='inner'>
 						<SettingsDrawer />
-
+						<FontSizeDrawer />
 						<div className='header'>
 							<div>
 								<img src={smartLogo} className='logo' alt='Vite logo' />
@@ -54,11 +55,6 @@ function App() {
 							</div>
 							<div className='subtitle start'>
 								Tap a heading to find out about the tool.
-							</div>
-							<div className='subtitle tip'>
-								TIP: If you are using an Android or iOS device, there are
-								buttons at the bottom to videos that show you how to add this
-								webapp as an app on your homescreen for quick access.
 							</div>
 						</div>
 

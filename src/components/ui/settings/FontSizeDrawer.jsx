@@ -14,36 +14,26 @@ import './styles.css';
 import ButtonFontSize from '../buttons/ButtonFontSize.jsx';
 import ButtonShare from '../buttons/share/ButtonShare.jsx';
 import ButtonUpdate from '../buttons/update/ButtonUpdate.jsx';
-import ButtonSettings from '../buttons/settings/ButtonSettings.jsx';
-import CheckboxOffline from '../footer/offlineCheckbox/OfflineCheckbox.jsx';
-import BackgroundOptions from '../footer/background/BackgroundOptions';
+import ButtonFontSettings from '../buttons/settings/ButtonFontSettings.jsx'; // import FontSettings from '../buttons/settings/ButtonSettings.jsx';
 
-export function SettingsDrawer() {
+export function FontSizeDrawer() {
 	return (
 		<Drawer>
 			<DrawerTrigger asChild>
-				<div className='settings'>
-					<ButtonSettings />
+				<div className='fontSize settings'>
+					<ButtonFontSettings />
 				</div>
 			</DrawerTrigger>
 			<div className='settingsDrawerMain'>
 				<DrawerContent className='DrawerContent'>
 					<div className='settingsDrawerCont'>
 						<div className='settingsDrawer'>
-							<div>Background</div>
-							<BackgroundOptions />
+							<ButtonFontSize size='decreasse' label='Smaller' />
+							<ButtonFontSize size='increase' label='Bigger' />
+							<ButtonShare label='Share' />
+							<ButtonUpdate label='Update' />
 						</div>
-						<div className='settingsDrawer'>
-							<CheckboxOffline />
-						</div>
-						<div className='settingsDrawer subtitle tip'>
-							<h3>Install as an app</h3>
-							<p>
-								Android or iOS users:, There are video guides at the bottom of
-								the main screen that show you how to add this website as an app
-								on your homescreen. Close this window and scroll down
-							</p>
-						</div>
+
 						<DrawerFooter className='drawerFooter'>
 							<DrawerClose asChild>
 								<Button variant='outline'>Close</Button>
@@ -55,4 +45,4 @@ export function SettingsDrawer() {
 		</Drawer>
 	);
 }
-export default SettingsDrawer;
+export default FontSizeDrawer;

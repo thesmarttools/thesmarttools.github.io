@@ -6,10 +6,23 @@
 	width: 40px;
 	margin-top: 16px;
 }
+.fontSize.settings {
+	margin-top: 0px;
+}
 .settingsDrawer {
 	display: flex;
 	width: 100%;
 	justify-content: space-evenly;
+}
+.settingsDrawer.subtitle {
+	align-items: center;
+}
+.settingsDrawer.subtitle p {
+	font-size: 0.7rem;
+	width: 100%;
+}
+.settingsDrawer.subtitle h3 {
+	font-size: 1.1rem;
 }
 .btn {
 	width: 40px;
@@ -53,7 +66,7 @@ div.DrawerContent[role='dialog'][data-state='open'] {
 	background-color: #373737;
 	color: #fff;
 	padding-bottom: 0;
-	min-height: 60vh;
+	min-height: 30vh;
 	/* height: 60vh; */
 }
 
