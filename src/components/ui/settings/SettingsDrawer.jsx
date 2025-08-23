@@ -15,6 +15,8 @@ import ButtonFontSize from '../buttons/ButtonFontSize.jsx';
 import ButtonShare from '../buttons/share/ButtonShare.jsx';
 import ButtonUpdate from '../buttons/update/ButtonUpdate.jsx';
 import ButtonSettings from '../buttons/settings/ButtonSettings.jsx';
+import CheckboxOffline from '../footer/offlineCheckbox/OfflineCheckbox.jsx';
+import BackgroundOptions from '../footer/background/BackgroundOptions';
 
 export function SettingsDrawer() {
 	return (
@@ -35,9 +37,10 @@ export function SettingsDrawer() {
 						</div>
 						<div className='settingsDrawer'>
 							<div>Background</div>
+							<BackgroundOptions />
 						</div>
 						<div className='settingsDrawer'>
-							<div>Offline</div>
+							<CheckboxOffline />
 						</div>
 						<DrawerFooter className='drawerFooter'>
 							<DrawerClose asChild>

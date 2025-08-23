@@ -1,9 +1,9 @@
 import { Button } from '@/components/ui/button';
-import {
-	Tooltip,
-	TooltipContent,
-	TooltipTrigger,
-} from '@/components/ui/tooltip';
+// import {
+// 	Tooltip,
+// 	TooltipContent,
+// 	TooltipTrigger,
+// } from '@/components/ui/tooltip';
 import iconIncreaseFontSize from '/src/assets/text_increase_24dp.svg';
 import iconDescreaseFontSize from '/src/assets/text_decrease_24dp.svg';
 import './buttonStyles.css';
@@ -18,20 +18,6 @@ const maxFontSize = 34;
 const getStoredBaseFontSize = () => {
 	const storedBaseFontSize = localStorage.getItem(storageKeyBaseFontSize);
 	return storedBaseFontSize ? storedBaseFontSize : rootFontSize;
-};
-
-const setBaseScale = (size) => {
-	// console.log('setBaseScale', size);
-	// let curBaseScale = getStoredScale();
-	// const newScale =
-	// 	size === 'increase' ? curBaseScale + stepScale : curBaseScale - stepScale;
-	// if (newScale >= minScale && newScale <= maxScale) {
-	// 	setBaseFontSize(size);
-	// }
-	// const newBaseScale = Math.min(Math.max(newScale, minScale), maxScale);
-	// //console.log('newBaseScale', newBaseScale);
-	// document.documentElement.style.setProperty('--user-scale', newBaseScale);
-	// localStorage.setItem(storageKey, newBaseScale.toString());
 };
 
 const setBaseFontSize = (size) => {

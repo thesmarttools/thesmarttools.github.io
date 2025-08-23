@@ -162,7 +162,7 @@ div[data-state='open'] .AccordionContentText {
 	font-weight: 800;
 	line-height: 1;
 	/* letter-spacing: 10px; */
-	padding-right: 6px;
+	padding-right: 3px;
 }
 .AccordionItem {
 	padding: 0.5rem 0;

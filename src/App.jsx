@@ -4,10 +4,10 @@ import './App.css';
 import androidWhiteLogo from './assets/Android_logo_white_30x30.svg';
 import appleWhiteLogo from './assets/Apple_logo_white_30x30.svg';
 
-import AccordionAcro from './components/ui/AccordionAcro.jsx';
+import AccordionAcro from './components/ui/AcronymAccordion/AccordionAcro.jsx';
 
 import SettingsDrawer from './components/ui/settings/SettingsDrawer.jsx';
-import Footer from './components/ui/footer/Footer.jsx';
+import FooterMetadata from './components/ui/footer/FooterMetadata.jsx';
 
 // if ('serviceWorker' in navigator) {
 // 	navigator.serviceWorker
@@ -92,7 +92,7 @@ function App() {
 							</div>
 						</div>
 					</div>
-					<Footer />
+					<FooterMetadata />
 				</div>
 			</div>
 		</>
