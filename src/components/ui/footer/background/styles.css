@@ -5,8 +5,10 @@
 	align-items: center;
 }
 .settingsDrawer:has(.backgroundOptions) > div:first-child {
-	font-size: 0.75rem;
+	font-size: 0.85rem;
 	color: #ccc;
+	max-width: 90%;
+	margin: 0 auto;
 }
 
 .backgroundOptions {
