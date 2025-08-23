@@ -18,7 +18,7 @@ jobs:
       - name: Increment version
         uses: saleweaver/version_increment_action@v1
         with:
-          file_path: 'version.json'
+          file_path: './version.json'
           version_key: 'version'
 
       - name: Create a new GitHub release
