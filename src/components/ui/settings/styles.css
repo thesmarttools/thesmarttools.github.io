@@ -50,11 +50,7 @@ div.DrawerContent[role='dialog'][data-state='open'] {
 	padding-bottom: 0;
 	min-height: 40vh;
 }
-div.DrawerContent[role='dialog'][data-state='open']
-	.settingsDrawerCont
-	> div:first-child {
-	display: none;
-}
+
 div.DrawerContent[role='dialog'][data-state='open'] h2 {
 	font-weight: 400;
 	padding: 20px 0;

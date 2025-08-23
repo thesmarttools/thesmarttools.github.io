@@ -27,14 +27,17 @@ export function SettingsDrawer() {
 			<div className='settingsDrawerMain'>
 				<DrawerContent className='DrawerContent'>
 					<div className='settingsDrawerCont'>
-						<DrawerHeader>
-							<DrawerTitle>Settings</DrawerTitle>
-						</DrawerHeader>
 						<div className='settingsDrawer'>
 							<ButtonFontSize size='decreasse' label='Bigger' />
 							<ButtonFontSize size='increase' label='Smaller' />
 							<ButtonShare label='Share' />
 							<ButtonUpdate label='Update' />
+						</div>
+						<div className='settingsDrawer'>
+							<div>Background</div>
+						</div>
+						<div className='settingsDrawer'>
+							<div>Offline</div>
 						</div>
 						<DrawerFooter className='drawerFooter'>
 							<DrawerClose asChild>
