@@ -10,7 +10,7 @@ export function BackgroundOptions() {
 		<div className='backgroundOptions'>
 			<BackgroundOption label='Light' icon={iconLightBg} option='light' />
 			<BackgroundOption label='Dark' icon={iconDarkBg} option='dark' />
-			<BackgroundOption label='Coloured' icon={iconSystemBg} option='system' />
+			<BackgroundOption label='Colourful' icon={iconSystemBg} option='system' />
 		</div>
 	);
 }
