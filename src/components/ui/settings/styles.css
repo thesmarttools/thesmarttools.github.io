@@ -16,6 +16,8 @@
 }
 .settingsDrawer.subtitle {
 	align-items: center;
+	max-width: 90%;
+	margin: auto;
 }
 .settingsDrawer.subtitle p {
 	font-size: 0.7rem;
