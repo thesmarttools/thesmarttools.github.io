@@ -30,8 +30,8 @@ export function SettingsDrawer() {
 				<DrawerContent className='DrawerContent'>
 					<div className='settingsDrawerCont'>
 						<div className='settingsDrawer'>
-							<ButtonFontSize size='decreasse' label='Bigger' />
-							<ButtonFontSize size='increase' label='Smaller' />
+							<ButtonFontSize size='decreasse' label='Smaller' />
+							<ButtonFontSize size='increase' label='Bigger' />
 							<ButtonShare label='Share' />
 							<ButtonUpdate label='Update' />
 						</div>
