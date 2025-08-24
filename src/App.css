@@ -68,7 +68,7 @@ body {
 .footer .install {
 	font-size: 1rem;
 	margin: 0.5rem 0;
-	color: var(--lightGrey);
+	color: var(--grey);
 }
 .footer .links {
 	display: flex;
@@ -147,6 +147,9 @@ body h3 {
 	font-weight: 400;
 	padding: 0.5rem 0;
 }
+.subtitle p {
+	margin-bottom: 0.5rem;
+}
 .subtitle.tip {
 	font-size: 0.85rem;
 	color: var(--yellow);
@@ -165,6 +168,16 @@ body h3 {
 	width: 25%;
 }
 
+.logo.apple svg path {
+	fill: var(--primary);
+}
+.logo.android svg path {
+	fill: var(--primary);
+	/* stroke: var(--background); */
+}
+div[data-vaul-overlay][data-vaul-snap-points-overlay='true'] {
+	opacity: 0.35;
+}
 @media (prefers-reduced-motion: no-preference) {
 	a:nth-of-type(2) .logo {
 		animation: logo-spin infinite 20s linear;

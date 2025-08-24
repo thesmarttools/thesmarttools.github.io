@@ -19,7 +19,9 @@ function ScenarioDialog({ btnLabel, title, content }) {
 	return (
 		<Dialog className='scenarioDialogCont'>
 			<DialogTrigger asChild>
-				<Button variant='outline'>{btnLabel}</Button>
+				<Button variant='outline'>
+					<div>{btnLabel}</div>
+				</Button>
 			</DialogTrigger>
 			<DialogContent className='scenarioDialog'>
 				<DialogTitle>{title}</DialogTitle>

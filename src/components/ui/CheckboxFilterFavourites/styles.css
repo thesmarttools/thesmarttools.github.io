@@ -1,0 +1,35 @@
+.CheckboxFilterFavouritesCont {
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+#CheckboxFilterFavoruites {
+	width: 20px;
+	height: 20px;
+	padding: 3px;
+}
+.CheckboxFilterFavouritesCont .option {
+	display: flex;
+	column-gap: 0.5rem;
+}
+.CheckboxFilterFavouritesCont .option label {
+	/* font-size: 0.8rem; */
+	/* font-weight: 300; */
+}
+
+#CheckboxFilterFavoruites[data-state='checked'] {
+	background: transparent;
+	border: 1px solid var(--primary);
+}
+#CheckboxFilterFavoruites[data-state='unchecked'] {
+	background: transparent;
+	border: none !important;
+	border: 1px solid var(--primary) !important;
+}
+#CheckboxFilterFavoruites[data-state='checked'] svg {
+	height: 20px;
+	margin-top: -3px;
+	stroke-width: 4px;
+	stroke: var(--primary);
+}

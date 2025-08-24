@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import { Accordion } from 'radix-ui';
 // import ButtonScenario from '../ui/buttons/ButtonScenario';
 import ScenarioDialog from '../dialog/ScenarioDialog';
@@ -13,6 +13,13 @@ import data from '../../../data/data.js';
 import Favourite from '../favourite/Favourite.jsx';
 
 const AccordionDemo = () => {
+	const showFavouriteData = localStorage.getItem('filterFavs');
+	const favouriteData = data.filter((a) => {
+		const idFromLocalStorage = localStorage.getItem(`favourite-item-${a.id}`);
+		return idFromLocalStorage === 'true';
+	});
+	const displayData = showFavouriteData === 'true' ? favouriteData : data;
+	console.log('favouriteData', favouriteData);
 	return (
 		<Accordion.Root
 			className='AccordionRoot'
@@ -20,7 +27,7 @@ const AccordionDemo = () => {
 			defaultValue=''
 			collapsible
 		>
-			{data.map((item) => (
+			{displayData.map((item) => (
 				<Accordion.Item
 					className='AccordionItem'
 					key={item.id}

@@ -13,6 +13,7 @@ import './styles.css';
 import ButtonSettings from '../buttons/settings/ButtonSettings.jsx';
 import CheckboxOffline from '../footer/offlineCheckbox/OfflineCheckbox.jsx';
 import BackgroundOptions from '../footer/background/BackgroundOptions';
+import CheckboxFilterFavourites from '@/src/components/ui/CheckboxFilterFavourites/CheckboxFilterFavourites.jsx';
 
 export function SettingsDrawer() {
 	return (
@@ -33,6 +34,9 @@ export function SettingsDrawer() {
 						<div className='settingsDrawer'>
 							<CheckboxOffline />
 						</div>
+
+						<CheckboxFilterFavourites />
+
 						<div className='settingsDrawer subtitle tip'>
 							<h3>Install as an app</h3>
 							<p>

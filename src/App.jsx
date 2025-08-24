@@ -1,20 +1,23 @@
-import smartLogo from './assets/iconwhite.png';
+import { createContext, useContext, useEffect, useState } from 'react';
+import smartLogo from './assets/iconlight.png';
 import './globals.css';
 import './App.css';
-
-import androidWhiteLogo from './assets/Android_logo_white_30x30.svg';
-import appleWhiteLogo from './assets/Apple_logo_white_30x30.svg';
-
 import AccordionAcro from './components/ui/AcronymAccordion/AccordionAcro.jsx';
-
 import SettingsDrawer from './components/ui/settings/SettingsDrawer.jsx';
 import FontSizeDrawer from './components/ui/settings/FontSIzeDrawer.jsx';
 import FooterMetadata from './components/ui/footer/FooterMetadata.jsx';
 import getStoredTheme from '@/src/components/theme/getStoredTheme';
 import setTheme from '@/src/components/theme/setStoredTheme';
+import iconAndroid from '@/src/components/icons/iconAndroid.jsx';
+import iconApple from '@/src/components/icons/iconApple.jsx';
 
 function App() {
 	setTheme({ theme: getStoredTheme() });
+	const [filterFavourites, setFilterFavourites] = useState(false);
+	// useEffect(() => {
+	// 	console.log('filterFavourites', filterFavourites);
+	// 	localStorage.setItem('filterFavs', filterFavourites);
+	// }, [filterFavourites]);
 	return (
 		<div className='app'>
 			<div className='main'>
@@ -33,11 +36,17 @@ function App() {
 							S.M.A.R.T?
 						</h1>
 						<div className='subtitle'>
-							The tools we learn at SMART meetings are ace but remembering them
-							can be hard. This app was created so that you don&apos;t have to!
+							<p>
+								The tools we learn at SMART meetings are ace but remembering
+								them can be hard.
+							</p>
+							<p>
+								This app is your SMART toolbox so you can carry them around for
+								whenever you need them.
+							</p>
 						</div>
 						<div className='subtitle start'>
-							Tap a heading to find out about the tool.
+							Tap a heading to read out about the tool.
 						</div>
 					</div>
 
@@ -53,10 +62,9 @@ function App() {
 								target='_blank'
 								rel='noopener noreferrer'
 							>
-								<img
-									src={androidWhiteLogo}
-									className='logo'
-									alt='Android logo'
+								<div
+									className='android logo'
+									dangerouslySetInnerHTML={{ __html: iconAndroid }}
 								/>
 								<div>Android</div>
 							</a>
@@ -65,7 +73,10 @@ function App() {
 								target='_blank'
 								rel='noopener noreferrer'
 							>
-								<img src={appleWhiteLogo} className='logo' alt='Apple logo' />
+								<div
+									className='apple logo'
+									dangerouslySetInnerHTML={{ __html: iconApple }}
+								/>
 								<div>Apple iOS</div>
 							</a>
 						</div>

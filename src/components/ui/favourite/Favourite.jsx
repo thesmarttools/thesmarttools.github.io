@@ -23,6 +23,7 @@ const Favourite = ({ id }) => {
 	const handleClick = (e) => {
 		e.stopPropagation();
 		const newFavourite = !favourite;
+		console.log('newFavourite', `favourite-${id}`);
 		localStorage.setItem(`favourite-${id}`, newFavourite.toString());
 		setFavourite(newFavourite);
 	};

@@ -10,7 +10,8 @@
 	--yellow: #8dff71;
 	--lightBlue: #bcb6ea;
 	--lightGrey: #ccc;
-	--lighGreyBg: #3232324d;
+	--lighGreyBg: #8080804d;
+	--grey: #999;
 	--card: oklch(0.205 0 0);
 	--card-foreground: oklch(0.985 0 0);
 	--popover: oklch(0.269 0 0);
@@ -54,8 +55,9 @@
 	--primary: oklch(0.205 0 0);
 	--primary-foreground: oklch(0.985 0 0);
 	--yellow: oklch(0.145 0 0);
+	--grey: oklch(0.145 0 0);
 	--lightBlue: oklch(0.145 0 0);
-	--lightGreyBg: oklch(0.317, 0, 0.89876);
+	--lightGreyBg: oklch(63.676% 0.00007 271.152);
 	--secondary: oklch(0.145 0 0);
 	--secondary-foreground: oklch(0.205 0 0);
 	--muted: oklch(0.97 0 0);
@@ -89,6 +91,7 @@
 	--lightBlue: oklch(0.985 0 0);
 	--lightGrey: oklch(0.985 0 0);
 	--lightGreyBg: oklch(0.409, 0%, 0.89876);
+	--grey: oklch(0.985 0 0);
 	--card: oklch(0.205 0 0);
 	--card-foreground: oklch(0.985 0 0);
 	--popover: oklch(0.269 0 0);
@@ -126,11 +129,12 @@
 		rgba(27, 134, 158, 1) 0%,
 		rgb(157, 30, 30) 81%
 	);
-	--background: oklch(0.145 0 0);
+	--background: oklch(32.109% 0.00004 271.152);
 	--foreground: oklch(0.985 0 0);
 	--yellow: #8dff71;
 	--lightBlue: #bcb6ea;
 	--lightGrey: #ccc;
+	--grey: #999;
 	--lighGreyBg: #3232324d;
 	--card: oklch(0.205 0 0);
 	--card-foreground: oklch(0.985 0 0);

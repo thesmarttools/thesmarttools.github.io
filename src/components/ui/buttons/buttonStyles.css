@@ -53,7 +53,7 @@ button:hover {
 	transition: all 0.3s ease-in-out;
 	display: flex;
 }
-button:hover {
+/*button:hover {
 	background-color: transparent;
 	transform: scale(1.1);
-}
+}*/
