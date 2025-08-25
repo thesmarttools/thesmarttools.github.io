@@ -10,6 +10,7 @@ import getStoredTheme from '@/src/components/theme/getStoredTheme';
 import setTheme from '@/src/components/theme/setStoredTheme';
 import iconAndroid from '@/src/components/icons/iconAndroid.jsx';
 import iconApple from '@/src/components/icons/iconApple.jsx';
+import QRCode from '@/src/components/ui/QRCode/QRCode.jsx';
 
 function App() {
 	setTheme({ theme: getStoredTheme() });
@@ -80,6 +81,7 @@ function App() {
 								<div>Apple iOS</div>
 							</a>
 						</div>
+						<QRCode />
 					</div>
 				</div>
 				<FooterMetadata />
