@@ -19,7 +19,6 @@ const AccordionDemo = () => {
 		return idFromLocalStorage === 'true';
 	});
 	const displayData = showFavouriteData === 'true' ? favouriteData : data;
-	console.log('favouriteData', favouriteData);
 	return (
 		<Accordion.Root
 			className='AccordionRoot'

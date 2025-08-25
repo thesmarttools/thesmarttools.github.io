@@ -174,11 +174,20 @@ div[data-state='open'] .AccordionContentText {
 	padding: 0.5rem 0;
 	margin: 0;
 }
+
 .AccordionItem[data-state='open'] {
 	background-color: var(--lighGreyBg);
 	margin-bottom: 1rem;
 	/* padding: 1rem 0; */
 }
+/* .AccordionContent[data-state='open'] {
+	transition: all 5000ms ease-out;
+	animation: slideDown 4000ms ease-out;
+}
+.AccordionContent[data-state='closed'] {
+	transition: all 5000ms ease-out;
+	animation: slideDown 4000ms ease-out;
+} */
 .AccordionItem[data-state='open'] .AccordionTriggerTitle {
 	width: 100%;
 	word-break: break-all;
