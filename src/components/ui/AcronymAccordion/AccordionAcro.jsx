@@ -63,8 +63,12 @@ const AccordionTrigger = React.forwardRef(
 				{...props}
 				ref={forwardedRef}
 			>
-				<Favourite id={value} className={children} />
-				<div className={'AccordionTriggerTitle ' + children}>{children}</div>
+				<Favourite id={value} className={children.replaceAll('.', '')} />
+				<div
+					className={'AccordionTriggerTitle ' + children.replaceAll('.', '')}
+				>
+					{children}
+				</div>
 				<ChevronDownIcon className='AccordionChevron' aria-hidden />
 			</Accordion.Trigger>
 		</Accordion.Header>
