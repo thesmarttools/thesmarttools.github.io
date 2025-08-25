@@ -10,7 +10,7 @@ const QRCode = () => {
 	return (
 		<div className='QRCode'>
 			<div>Scan QR Code to share the app</div>
-			<img src={theme === 'dark' ? QRCodeIconDark : QRCodeIcon} alt='QRCode' />
+			<img src={theme === 'light' ? QRCodeIcon : QRCodeIconDark} alt='QRCode' />
 		</div>
 	);
 };
