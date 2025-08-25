@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState } from 'react';
-import smartLogo from './assets/iconlight.webp';
-import smartLogoDark from './assets/icondark.webp';
+import smartLogo from './assets/iconlight.avif';
+import smartLogoDark from './assets/icondark.avif';
 import './globals.css';
 import './App.css';
 import AccordionAcro from './components/ui/AcronymAccordion/AccordionAcro.jsx';
