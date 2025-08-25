@@ -3,7 +3,7 @@ import * as React from 'react';
 import iconFavouriteFilled from '../../icons/iconFavouriteFilled';
 import iconFavouriteOutline from '../../icons/iconFavouriteOutline';
 import './styles.css';
-const Favourite = ({ id }) => {
+const Favourite = ({ id, className }) => {
 	const [favourite, setFavourite] = React.useState(() => {
 		const storedFavourite = localStorage.getItem(`favourite-${id}`);
 		return storedFavourite; // === 'true';
@@ -29,7 +29,10 @@ const Favourite = ({ id }) => {
 	};
 
 	return (
-		<div className='AccordionItemFavourite' onClick={handleClick}>
+		<div
+			className={'AccordionItemFavourite ' + className}
+			onClick={handleClick}
+		>
 			<div
 				dangerouslySetInnerHTML={{ __html: icon }}
 				className={imgClassName}
@@ -40,6 +43,7 @@ const Favourite = ({ id }) => {
 };
 Favourite.propTypes = {
 	id: PropTypes.string,
+	className: PropTypes.string,
 };
 Favourite.displayName = 'Favourite';
 export default Favourite;

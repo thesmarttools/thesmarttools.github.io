@@ -32,7 +32,7 @@ const AccordionDemo = () => {
 					key={item.id}
 					value={'item-' + item.id}
 				>
-					<AccordionTrigger value={'item-' + item.id}>
+					<AccordionTrigger value={'item-' + item.id} className={item.title}>
 						{item.title}
 					</AccordionTrigger>
 					<AccordionContent>{item.content}</AccordionContent>
@@ -59,12 +59,12 @@ const AccordionTrigger = React.forwardRef(
 	({ children, value, className, ...props }, forwardedRef) => (
 		<Accordion.Header className='AccordionHeader'>
 			<Accordion.Trigger
-				className={classNames('AccordionTrigger', className)}
+				className={classNames('AccordionTrigger ', className)}
 				{...props}
 				ref={forwardedRef}
 			>
-				<Favourite id={value} />
-				<div className='AccordionTriggerTitle'>{children}</div>
+				<Favourite id={value} className={children} />
+				<div className={'AccordionTriggerTitle ' + children}>{children}</div>
 				<ChevronDownIcon className='AccordionChevron' aria-hidden />
 			</Accordion.Trigger>
 		</Accordion.Header>
