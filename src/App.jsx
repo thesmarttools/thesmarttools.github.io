@@ -82,6 +82,14 @@ function App() {
 							</a>
 						</div>
 						<QRCode />
+						{/* <a
+							href='https://smartrecovery.org.uk/'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<br />
+							UK SMART Recovery (UKSR) website
+						</a> */}
 					</div>
 				</div>
 				<FooterMetadata />
