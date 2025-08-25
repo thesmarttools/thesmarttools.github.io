@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useState } from 'react';
-import smartLogo from './assets/iconlight.png';
+import smartLogo from './assets/iconlight.webp';
+import smartLogoDark from './assets/icondark.webp';
 import './globals.css';
 import './App.css';
 import AccordionAcro from './components/ui/AcronymAccordion/AccordionAcro.jsx';
@@ -14,6 +15,7 @@ import QRCode from '@/src/components/ui/QRCode/QRCode.jsx';
 
 function App() {
 	setTheme({ theme: getStoredTheme() });
+	const theme = getStoredTheme();
 	const [filterFavourites, setFilterFavourites] = useState(false);
 	// useEffect(() => {
 	// 	console.log('filterFavourites', filterFavourites);
@@ -29,7 +31,11 @@ function App() {
 					</div>
 					<div className='header'>
 						<div>
-							<img src={smartLogo} className='logo' alt='Vite logo' />
+							<img
+								src={theme === 'light' ? smartLogoDark : smartLogo}
+								className='logo'
+								alt='Vite logo'
+							/>
 						</div>
 						<h1>
 							What the
