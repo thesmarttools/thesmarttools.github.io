@@ -135,6 +135,13 @@ body h1:after {
 	border-bottom: 1px solid var(--lightBlue);
 	margin: 0.5rem auto;
 }
+body h2 {
+	font-size: 1.8rem;
+	line-height: 1.1;
+	margin: 0.75rem 0;
+	font-weight: 700;
+	color: var(--yellow);
+}
 body h3 {
 	font-size: 1.8rem;
 	line-height: 1.1;

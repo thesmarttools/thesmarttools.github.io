@@ -49,7 +49,7 @@ function App() {
 							Tap a heading to read out about the tool.
 						</div>
 					</div>
-
+					<h2>SMART Tools:</h2>
 					<AccordionAcro />
 
 					<div className='footer'>
