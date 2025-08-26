@@ -14,7 +14,7 @@ import ButtonSettings from '../buttons/settings/ButtonSettings.jsx';
 import CheckboxOffline from '../footer/offlineCheckbox/OfflineCheckbox.jsx';
 import BackgroundOptions from '../footer/background/BackgroundOptions';
 import CheckboxFilterFavourites from '@/src/components/ui/CheckboxFilterFavourites/CheckboxFilterFavourites.jsx';
-
+import ButtonUpdate from '../buttons/update/ButtonUpdate.jsx';
 export function SettingsDrawer() {
 	return (
 		<Drawer>
@@ -33,6 +33,7 @@ export function SettingsDrawer() {
 						</div>
 						<div className='settingsDrawer'>
 							<CheckboxOffline />
+							<ButtonUpdate />
 						</div>
 
 						<CheckboxFilterFavourites />

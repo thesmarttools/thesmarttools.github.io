@@ -1,6 +1,10 @@
 @import '@/src/globals.css';
 @import '../buttonStyles.css';
-.share-icon button {
-	border: none;
-	outline: none;
+.share-icon {
+	width: 40px;
+	height: 40px;
+	button {
+		border: none;
+		outline: none;
+	}
 }

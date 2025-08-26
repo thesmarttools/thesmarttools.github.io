@@ -13,7 +13,6 @@ const ButtonUpdate = ({ label }) => {
 					<div dangerouslySetInnerHTML={{ __html: UpdateIcon }} />
 				</div>
 			</button>
-			<div>{label}</div>
 		</div>
 	);
 };

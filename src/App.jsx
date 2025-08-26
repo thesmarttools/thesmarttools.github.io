@@ -12,7 +12,7 @@ import setTheme from '@/src/components/theme/setStoredTheme';
 import iconAndroid from '@/src/components/icons/iconAndroid.jsx';
 import iconApple from '@/src/components/icons/iconApple.jsx';
 import QRCode from '@/src/components/ui/QRCode/QRCode.jsx';
-
+import ButtonShare from '@/src/components/ui/buttons/share/ButtonShare.jsx';
 function App() {
 	setTheme({ theme: getStoredTheme() });
 	const theme = getStoredTheme();
@@ -28,6 +28,7 @@ function App() {
 					<div className='settingsContainer'>
 						<SettingsDrawer />
 						<FontSizeDrawer />
+						<ButtonShare />
 					</div>
 					<div className='header'>
 						<div>
