@@ -65,7 +65,7 @@ const AccordionTrigger = React.forwardRef(
 			>
 				<Favourite id={value} className={children.replaceAll('.', '')} />
 				<div
-					className={'AccordionTriggerTitle ' + children.replaceAll('.', '')}
+					className={children.replaceAll('.', '') + ' AccordionTriggerTitle '}
 				>
 					{children}
 				</div>
