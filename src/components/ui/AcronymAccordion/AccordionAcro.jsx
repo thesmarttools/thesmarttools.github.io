@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Accordion } from 'radix-ui';
 // import ButtonScenario from '../ui/buttons/ButtonScenario';
 import ScenarioDialog from '../dialog/ScenarioDialog';
 import { ChevronDownIcon } from '@radix-ui/react-icons';
-import starOutline from '/src/assets/star_outline.svg';
-import starFilled from '/src/assets/star_filled.svg';
 import './styles.css';
 import './scenariosStyles.css';
 import PropTypes from 'prop-types';

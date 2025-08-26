@@ -852,12 +852,14 @@ const data = [
 			{
 				title: 'After a Relapse',
 				content:
-					"Unconditional: Your worth doesn't decrease because you used again. Self: You're a complex person dealing with a difficult challenge, not just 'an addict.' Acceptance: Accept that you slipped while still believing you can get back on track.",
+					"<b>Unconditional:</b><br /> Your worth doesn't decrease because you used again.  <br /><br /><b>Self:</b><br /> You're a complex person dealing with a difficult challenge, not just 'an addict.'<br /><br /><b>Acceptance:</b><br /> Accept that you slipped while still believing <u>you can get back on track.</u>",
+				btnLabel: 'Unconditional Self Acceptance',
 			},
 			{
 				title: 'Comparing Yourself to Others',
 				content:
-					"Unconditional: Your value isn't determined by how you stack up against others. Self: Focus on your whole journey, not just where you are right now. Acceptance: Embrace your current progress while working toward your goals without self-criticism.",
+					"<b>Unconditional:</b><br /> Your value isn't determined by how you stack up against others.  <br /><br /><b>Self:</b><br /> Focus on your whole journey, not just where you are right now. <br /><br /><b>Acceptance:</b><br /> Embrace your current progress while working <u>toward your goals without self-criticism.</u>",
+				btnLabel: 'Comparing Yourself to Others',
 			},
 		],
 	},
@@ -885,14 +887,14 @@ const data = [
 					meaning: 'Identify',
 					definition:
 						"Name what you're dealing with - triggers, emotions, options - get clear on the situation",
-					scenario: '',
+					// scenario: '',
 				},
 				{
 					letter: 'T',
 					meaning: 'Take',
 					definition:
 						'Now make your move - but make it consciously, not impulsively',
-					scenario: '',
+					// scenario: '',
 				},
 			],
 			explanation:
@@ -902,12 +904,14 @@ const data = [
 			{
 				title: 'Angry Text Message',
 				content:
-					"Wait: Don't respond immediately to your ex's nasty text. Assess: You're hurt and angry, but also in a good place in your recovery. Identify: This is a trigger situation, you have options like blocking them or talking to your sponsor. Take: Delete the mean response you typed and call your support person instead.",
+					"<b>Wait:</b><br /> Don't respond immediately to your ex's nasty text. <br /> <br /> <b>Assess:</b><br /> You're hurt and angry, but also in a good place in your recovery.<br /> <br /> <b>Identify:</b><br /> This is a trigger situation, you have options like blocking them or talking to your sponsor.<br /> <br />  <b>Take:</b><br /> Delete the mean response you typed and call your support person instead.",
+				btnLabel: 'Angry Text Message',
 			},
 			{
 				title: 'Sudden Urge to Quit Your Job',
 				content:
-					"Wait: Don't storm into your boss's office after a bad meeting. Assess: You're frustrated with work but also stressed about money. Identify: This is anger and exhaustion talking, your options include talking to HR, looking for new jobs, or addressing specific issues. Take: Schedule a conversation with your supervisor for next week to discuss concerns professionally.",
+					"<b>Wait:</b><br /> Don't storm into your boss's office after a bad meeting. <br /><br /><b>Assess:</b><br /> You're frustrated with work but also stressed about money. <br /><br /><b>Identify:</b><br /> This is anger and exhaustion talking, your options include talking to HR, looking for new jobs, or addressing specific issues. <br /><br /><b>Take:</b><br /> Schedule a conversation with your supervisor for next week to discuss concerns professionally.",
+				btnLabel: 'Sudden Urge to Quit Your Job',
 			},
 		],
 	},

@@ -88,7 +88,7 @@ function App() {
 								<div>Apple iOS</div>
 							</a>
 						</div>
-						<QRCode />
+						<QRCode label='Share the app, scan the QR Code' />
 						{/* <a
 							href='https://smartrecovery.org.uk/'
 							target='_blank'
