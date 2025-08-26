@@ -1,8 +1,9 @@
 .CheckboxFilterFavouritesCont {
-	width: 100%;
+	width: 80%;
 	display: flex;
 	align-items: flex-end;
-	justify-content: center;
+	justify-content: flex-start;
+	margin: 0 auto;
 }
 #CheckboxFilterFavoruites {
 	width: 20px;

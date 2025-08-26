@@ -31,12 +31,13 @@ export function SettingsDrawer() {
 							<div>Theme</div>
 							<BackgroundOptions />
 						</div>
+
+						<CheckboxFilterFavourites />
+
 						<div className='settingsDrawer'>
 							<CheckboxOffline />
 							<ButtonUpdate />
 						</div>
-
-						<CheckboxFilterFavourites />
 
 						<div className='settingsDrawer subtitle tip'>
 							<h3>Install as an app</h3>
