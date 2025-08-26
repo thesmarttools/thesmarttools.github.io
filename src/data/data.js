@@ -112,21 +112,21 @@ const data = [
 					letter: 'D',
 					meaning: 'Deny or Delay',
 					definition:
-						'Just say "not right now" - you don\'t have to give in immediately.<br /><br /> Urges have expiration dates',
+						'Just say <u>"not right now"</u> - you don\'t have to give in immediately.<br /><br /> Urges have expiration dates',
 					scenario: '',
 				},
 				{
 					letter: 'E',
 					meaning: 'Escape',
 					definition:
-						'Change your scenery!<br /><br /> Sometimes the best thing you can do is physically remove yourself from temptation',
+						'<u>Change your scenery!</u><br /><br /> Sometimes the best thing you can do is physically remove yourself from temptation',
 					scenario: '',
 				},
 				{
 					letter: 'A',
 					meaning: 'Avoid / Accept / Attack',
 					definition:
-						'Pick your battle strategy:<br /><br /> dodge the trigger, accept the feeling will pass, or tackle it head-on',
+						'<u>Pick your battle strategy:</u><br /><br /> dodge the trigger, accept the feeling will pass, or tackle it head-on',
 					scenario: '',
 				},
 				{
@@ -151,13 +151,13 @@ const data = [
 			{
 				title: 'Craving Alcohol at a Party',
 				content:
-					"<b>Delay:</b><br />  'I'll wait 15 minutes first.' Escape: Step outside or go to the bathroom.<br /> <br />  <b>Accept:</b><br />  'This urge will pass.'<br /> <br />  <b>Distract:</b><br />  Start a conversation with someone new.<br /> <br />  <b>Substitute:</b><br />  Grab a mocktail or soda instead.",
+					"<b>Delay:</b><br />  'I'll wait 15 minutes first.' <b>Escape:</b> Step outside or go to the bathroom.<br /> <br />  <b>Accept:</b><br />  'This urge will pass.'<br /> <br />  <b>Distract:</b><br />  Start a conversation with someone new.<br /> <br />  <b>Substitute:</b><br />  Grab a mocktail or soda instead.",
 				btnLabel: 'Beat the Craving',
 			},
 			{
 				title: 'Wanting to Text an Ex',
 				content:
-					"<b>Delay:</b><br />  'I'll wait until tomorrow.'<br /> <br />  Escape:<br /> Leave your phone in another room.<br /> <br />  <b>Avoid:</b> <br /> Delete their number (again).<br /> <br />  Distract: <br /> Call a friend or watch funny videos. <br /> <br /> <b>Substitute:</b><br />  Write in a journal instead.<br /> <br /> ",
+					"<b>Delay:</b><br />  'I'll wait until tomorrow.'<br /> <br />  <b>Escape:</b><br /> Leave your phone in another room.<br /> <br />  <b>Avoid:</b> <br /> Delete their number (again).<br /> <br />  <b>Distract:</b> <br /> Call a friend or watch funny videos. <br /> <br /> <b>Substitute:</b><br />  Write in a journal instead.<br /> <br /> ",
 				btnLabel: 'Resist the Urge',
 			},
 		],
@@ -223,7 +223,7 @@ const data = [
 			{
 				title: 'Negative Self-Talk Spiral',
 				content:
-					"Inner voice says 'You'll never change, why even try?' Catch this destructive self-talk, recognize the familiar pattern, refuse to argue with it, and replace it with 'I'm learning and growing every day.'",
+					"Inner voice says <u>'You'll never change, why even try?</u>'<br /><br /> Catch this destructive self-talk, recognize the familiar pattern, refuse to argue with it, and replace it with <u>'I'm learning and growing every day.'</u>",
 				btnLabel: 'Silence the Critic',
 			},
 		],
@@ -275,7 +275,7 @@ const data = [
 			{
 				title: 'Weekend Relapse Risk',
 				content:
-					"Saturday evening and you're thinking about using.<br /> <br />  Check:<br />  Skipped meals while running errands (Hungry), <br /> argument with family (Angry), <br /> friends are all busy (Lonely), <br /> stayed up too late binge-watching (Tired). <br /> <br /> Address each need before the craving gets stronger.",
+					"Saturday evening and you're thinking about using.<br /> <br />  <b>Check:</b><br />  Skipped meals while running errands <u>(Hungry)</u>, <br /> argument with family <u>(Angry)</u>, <br /> friends are all busy <u>(Lonely)</u>, <br /> stayed up too late binge-watching <u>(Tired)</u>. <br /> <br /> Address each need before the craving gets stronger.",
 				btnLabel: 'Address Needs',
 			},
 		],
@@ -327,7 +327,7 @@ const data = [
 			{
 				title: 'Lost Sense of Direction',
 				content:
-					"Help a neighbor with groceries <u>(Helping)</u>,<br />  reach out to old friends you trust <u>(Others)</u>, explore going back to school <u>(Purpose)</u>, acknowledge you've been handling stress better lately <u>(Esteem)</u>. <br /> <br /> <b>Small steps toward a meaningful life.</b>",
+					"Help a neighbor with groceries <u>(Helping)</u>,<br />  reach out to old friends you trust <u>(Others)</u>, <br />explore going back to school <u>(Purpose)</u>, <br />acknowledge you've been handling stress better lately <u>(Esteem)</u>. <br /> <br /> <b>Small steps toward a meaningful life.</b>",
 				btnLabel: 'Find Direction',
 			},
 		],
@@ -366,13 +366,13 @@ const data = [
 			{
 				title: 'Career vs. Family Time Decision',
 				content:
-					'Your job offers overtime but the kids have a recital. <br /> <br /> Your hierarchy: Family relationships, personal health, financial stability, career advancement. <br /> Since family tops your list, the choice becomes clear - attend the recital.',
+					'Your job offers overtime but the kids have a recital. <br /> <br /> <b>Your hierarchy:</b> <br />Family relationships, <br />personal health, <br />financial stability, <br />career advancement. <br /><br /> <u>Since family tops your list</u>, the choice becomes clear - <u>attend the recital.</u>',
 				btnLabel: 'Choose Values',
 			},
 			{
 				title: 'Friend Wants You to Skip Therapy',
 				content:
-					'Friend wants to hang out during your therapy session. Your values hierarchy: Mental health, authentic relationships, fun/socializing. Explain that therapy is non-negotiable and suggest meeting afterward.',
+					'Friend wants to hang out during your therapy session.<br /><br /><b>Your values hierarchy:</b><br /> Mental health, <br />authentic relationships, <br />fun/socializing. <br /><br /> Explain that therapy is non-negotiable and suggest meeting afterward.',
 				btnLabel: 'Rank Priorities',
 			},
 		],
@@ -411,13 +411,13 @@ const data = [
 			{
 				title: 'People-Pleasing Pattern',
 				content:
-					"Identify: You always say yes even when overwhelmed. Challenge: Is saying yes really helping anyone if you're burnt out and resentful? Eliminate: Replace automatic 'yes' with 'Let me check my schedule and get back to you.'",
+					"<b>Identify:</b><br /> You always say yes even when overwhelmed. <br /><br /><b>Challenge:</b> <br />Is saying yes really helping anyone if you're burnt out and resentful?<br /><br /> <b>Eliminate:</b><br /> Replace automatic 'yes' with 'Let me check my schedule and get back to you.'",
 				btnLabel: 'Break the Pattern',
 			},
 			{
 				title: 'Social Media Comparison',
 				content:
-					'Identify: Scrolling Instagram makes you feel inadequate. Challenge: Are these highlight reels an accurate picture of reality? Eliminate: Replace mindless scrolling with calling a real friend or going for a walk.',
+					'<b>Identify:</b><br /> Scrolling Instagram makes you feel inadequate.<br /><br /> <b>Challenge:</b><br /> Are these highlight reels an accurate picture of reality?<br /><br /> <b>Eliminate:</b><br /> Replace mindless scrolling with calling a real friend or going for a walk.',
 				btnLabel: 'Challenge & Change',
 			},
 		],
@@ -456,13 +456,13 @@ const data = [
 			{
 				title: 'Traffic Jam Meltdown',
 				content:
-					"Stuck in traffic, running late, patience is gone. Recognize your low frustration tolerance, accept that this sucks but isn't dangerous, practice breathing instead of road rage. Build tolerance for things outside your control.",
+					"Stuck in traffic, <br />running late,<br /> patience is gone. <br /><br />Recognize your low frustration tolerance, accept that this sucks but isn't dangerous, practice breathing instead of road rage. <br /><br />Build tolerance for things outside your control.",
 				btnLabel: 'Stay Cool',
 			},
 			{
 				title: 'Technology Not Working',
 				content:
-					"Computer keeps crashing while you're trying to work. Notice you're at your limit, acknowledge the frustration is valid, take breaks between attempts instead of getting more angry. Learning to tolerate technical difficulties.",
+					"Computer keeps crashing while you're trying to work. <br /><br /><b>Notice you're at your limit</b>, <br /><b>acknowledge the frustration is valid</b>, <br /><b>take breaks between attempts instead of getting more angry.</b> <br /><br />Learning to tolerate technical difficulties.",
 				btnLabel: 'Build Tolerance',
 			},
 		],
@@ -501,13 +501,13 @@ const data = [
 			{
 				title: 'Three Months Clean',
 				content:
-					'Progress: Ninety days without using, better sleep, improved relationships. Insight: Realizing you used to cope with boredom and loneliness. Empowerment: Choosing healthy activities and reaching out to friends instead of isolating.',
+					'<b>Progress:</b><br /> Ninety days without using, better sleep, improved relationships. <br /><br /><b>Insight:</b> <br />Realizing you used to cope with boredom and loneliness. <br /><br /><b>Empowerment:</b> <br />Choosing healthy activities and reaching out to friends instead of isolating.',
 				btnLabel: 'Track Growth',
 			},
 			{
 				title: 'Handled Stress Without Old Habits',
 				content:
-					'Progress: Used coping skills during a tough week at work. Insight: Understanding that your anxiety spikes on Sundays because of work dread. Empowerment: Planning Sunday self-care routines to manage the anxiety proactively.',
+					'<b>Progress:</b><br /> Used coping skills during a tough week at work.<br /><br /> <b>Insight:</b><br /> Understanding that your anxiety spikes on Sundays because of work dread.<br /><br /> <b>Empowerment:</b><br /> Planning Sunday self-care routines to manage the anxiety proactively.',
 				btnLabel: 'Celebrate Wins',
 			},
 		],
@@ -546,13 +546,13 @@ const data = [
 			{
 				title: 'Daily Recovery Routine',
 				content:
-					'Practice: Meditate for 10 minutes every morning, even when you feel good. Patience: Some days meditation feels pointless, but you trust the process. Persistence: Keep the routine going even during busy or stressful weeks.',
+					'<b>Practice:</b><br /> Meditate for 10 minutes every morning, even when you feel good.<br /><br /> <b>Patience:</b><br /> Some days meditation feels pointless, but you trust the process. <br /><br /><b>Persistence:</b><br /> Keep the routine going even during busy or stressful weeks.',
 				btnLabel: 'Stick With It',
 			},
 			{
 				title: 'Learning New Coping Skills',
 				content:
-					'Practice: Use breathing exercises daily, not just during panic attacks. Patience: Accept that it took months to feel natural instead of forced. Persistence: Continue even when the old habits seem easier and faster.',
+					'<b>Practice:</b><br /> Use breathing exercises daily, not just during panic attacks.<br /><br /> <b>Patience:</b> <br />Accept that it took months to feel natural instead of forced. <br /><br /><b>Persistence:</b> <br />Continue even when the old habits seem easier and faster.',
 				btnLabel: 'Keep Practicing',
 			},
 		],
@@ -598,13 +598,13 @@ const data = [
 			{
 				title: 'Two Years Into Recovery',
 				content:
-					'Recovery: Still attend weekly support meetings even though life is stable. Awareness: Notice when work stress builds up before it becomes overwhelming. Vigilance: Recognize old thinking patterns creeping back. Empowerment: Trust your ability to handle challenges without using.',
+					'<b>Recovery:</b><br /> Still attend weekly support meetings even though life is stable. <br /><br /><b>Awareness:</b><br /> Notice when work stress builds up before it becomes overwhelming. <br /><br /><b>Vigilance:</b><br /> Recognize old thinking patterns creeping back. <br /><br /><b>Empowerment:</b><br /> Trust your ability to handle challenges without using.',
 				btnLabel: 'Stay Strong',
 			},
 			{
 				title: 'Facing a Major Life Change',
 				content:
-					'Recovery: Remember that major transitions are high-risk times. Awareness: Monitor your stress levels during the move/job change/breakup. Vigilance: Watch for isolation, sleep problems, or negative thinking. Empowerment: Use your support system and coping tools confidently.',
+					'<b>Recovery:</b><br /> Remember that major transitions are high-risk times.<br /><br /> <b>Awareness:</b><br /> Monitor your stress levels during the move/job change/breakup.<br /><br /> <b>Vigilance:</b><br /> Watch for isolation, sleep problems, or negative thinking.<br /><br /> <b>Empowerment:</b><br /> Use your support system and coping tools confidently.',
 				btnLabel: 'Navigate Change',
 			},
 		],
@@ -643,13 +643,13 @@ const data = [
 			{
 				title: 'Job Interview Anxiety',
 				content:
-					"Rational: You're qualified and have prepared well. Emotional: It's normal to feel nervous about important things. Imagery: Visualize yourself speaking confidently, connecting with the interviewer, and walking out feeling proud regardless of the outcome.",
+					"<b>Rational:</b><br /> You're qualified and have prepared well. <br /><br /><b>Emotional:</b><br /> It's normal to feel nervous about important things. <br /><br /><b>Imagery:</b><br /> Visualize yourself speaking confidently, connecting with the interviewer, and <u>walking out feeling proud regardless of the outcome.</u>",
 				btnLabel: 'Balance & Visualize',
 			},
 			{
 				title: 'Relationship Conflict',
 				content:
-					"Rational: This argument doesn't mean the relationship is over. Emotional: You're hurt and that's valid, but don't make permanent decisions from temporary emotions. Imagery: Picture having a calm conversation where you both listen and work together to solve the problem.",
+					"<b>Rational:</b><br /> This argument doesn't mean the relationship is over.<br /><br /> <b>Emotional:</b><br /> You're hurt and that's valid, but don't make permanent decisions from temporary emotions.<br /><br /> <b>Imagery:</b><br /> Picture having <u>a calm conversation where you both listen</u> and <u>work together to solve the problem.</u>",
 				btnLabel: 'Think & Feel',
 			},
 		],
@@ -702,13 +702,13 @@ const data = [
 			{
 				title: 'Getting Back Into Exercise',
 				content:
-					'Specific: Walk for 30 minutes. Measurable: Track walks on phone app. Achievable: Start with 3 times per week, not daily. Relevant: Exercise helps with mood and energy in recovery. Time-bound: Build this habit over the next 4 weeks.',
+					'<b>Specific:</b><br /> Walk for 30 minutes. <br /><br /><b>Measurable:</b><br /> Track walks on phone app. <br /><br /><b>Achievable:</b><br /> Start with 3 times per week, not daily. <br /><br /><b>Relevant:</b><br /> Exercise helps with mood and energy in recovery. <br /><br /><b>Time-bound:</b><br /> Build this habit over the next 4 weeks.',
 				btnLabel: 'Set SMART Goals',
 			},
 			{
 				title: 'Improving Sleep Habits',
 				content:
-					'Specific: Be in bed by 10:30 PM with no screens. Measurable: Track bedtime and sleep quality. Achievable: Start with weeknights first. Relevant: Better sleep improves mood and decision-making. Time-bound: Establish routine within 2 weeks.',
+					'<b>Specific:</b><br /> Be in bed by 10:30 PM with no screens.<br /><br /> <b>Measurable:</b><br /> Track bedtime and sleep quality.<br /><br /> <b>Achievable:</b><br /> Start with weeknights first.<br /><br /> <b>Relevant:</b><br /> Better sleep improves mood and decision-making. <br /><br /><b>Time-bound:</b><br /> Establish routine within 2 weeks.',
 				btnLabel: 'Plan Success',
 			},
 		],
@@ -754,13 +754,13 @@ const data = [
 			{
 				title: 'Social Anxiety at a Party',
 				content:
-					"Thoughts: 'Everyone thinks I'm weird.' Assumptions: People are paying attention to and judging you. Predictions: You'll embarrass yourself and everyone will remember. Evaluations: You're being the worst critic of yourself - would you judge others this harshly?",
+					"<b>Thoughts:</b><br /> 'Everyone thinks I'm weird.' <br /><br /><b>Assumptions:</b><br /> People are paying attention to and judging you. <br /><br /><b>Predictions:</b><br /> You'll embarrass yourself and everyone will remember. <br /><br /><b>Evaluations:</b><br /> You're being the worst critic of yourself - would you judge others this harshly?",
 				btnLabel: 'Check Reality',
 			},
 			{
 				title: 'Work Performance Worry',
 				content:
-					"Thoughts: 'I'm going to get fired.' Assumptions: One mistake means you're incompetent. Predictions: Your boss will call you in for a termination meeting. Evaluations: You're catastrophizing - most people make mistakes and keep their jobs.",
+					"<b>Thoughts:</b><br /> 'I'm going to get fired.' <br /><br /><b>Assumptions:</b><br /> One mistake means you're incompetent. <br /><br /><b>Predictions:</b><br /> Your boss will call you in for a termination meeting. <br /><br /><b>Evaluations:</b><br /> You're catastrophizing - most people make mistakes and keep their jobs.",
 				btnLabel: 'Fact Check',
 			},
 		],
@@ -806,13 +806,13 @@ const data = [
 			{
 				title: 'Cigarette Cravings',
 				content:
-					'Unwanted: Accept that nicotine cravings are normal and temporary. Reduce: Use breathing exercises, chew gum, take a walk. Gradually: Notice cravings becoming less frequent over weeks. Eliminate: Eventually go days, then weeks without thinking about smoking.',
+					'<b>Unwanted:</b><br /> Accept that nicotine cravings are normal and temporary. <br /> <br /> <b>Reduce:</b><br /> Use breathing exercises, chew gum, take a walk. <br /> <br /> <b>Gradually:</b><br /> Notice cravings becoming less frequent over weeks. <br /> <br /> <b>Eliminate:</b><br /> Eventually go days, then weeks without thinking about smoking.',
 				btnLabel: 'Reduce Urges',
 			},
 			{
 				title: 'Shopping Addiction Urges',
 				content:
-					"Unwanted: Acknowledge the urge to buy things you don't need is part of the addiction. Reduce: Uninstall shopping apps, make a list before going to stores, bring limited cash. Gradually: Practice sitting with the discomfort of wanting something. Eliminate: Find that shopping urges rarely occur.",
+					"<b>Unwanted:</b><br /> Acknowledge the urge to buy things you don't need is part of the addiction. <br /> <br /> <b>Reduce:</b><br /> Uninstall shopping apps, make a list before going to stores, bring limited cash. <br /> <br /> <b>Gradually:</b><br /> Practice sitting with the discomfort of wanting something. <br /> <br /> <b>Eliminate:</b><br /> Find that shopping urges rarely occur.",
 				btnLabel: 'Control Impulses',
 			},
 		],
