@@ -9,7 +9,7 @@ const QRCode = () => {
 	const theme = getStoredTheme();
 	return (
 		<div className='QRCode'>
-			<div>Scan QR Code to share the app</div>
+			<div>Share the app, scan the QR Code</div>
 			<img src={theme === 'light' ? QRCodeIcon : QRCodeIconDark} alt='QRCode' />
 		</div>
 	);
