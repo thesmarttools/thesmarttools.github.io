@@ -121,7 +121,11 @@ function App() {
 							</a>
 						</p>
 						<p>Find a SMART meeting near you - worldwide</p>
-						<a href='https://www.smartrecoveryinternational.org/'>
+						<a
+							href='https://www.smartrecoveryinternational.org/'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
 							SMART Recovery International
 						</a>
 					</div>
