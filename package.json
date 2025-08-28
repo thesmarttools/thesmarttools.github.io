@@ -31,7 +31,8 @@
 		"tailwind-merge": "^1.14.0",
 		"tailwindcss-animate": "^1.0.6",
 		"vaul": "^1.1.2",
-		"vite-plugin-commonjs": "^0.10.4"
+		"vite-plugin-commonjs": "^0.10.4",
+		"zustand": "^5.0.8"
 	},
 	"devDependencies": {
 		"@types/node": "^20.4.6",

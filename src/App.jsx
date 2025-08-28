@@ -1,26 +1,30 @@
-import { createContext, useContext, useEffect, useState } from 'react';
-import smartLogo from './assets/iconlight136w.avif';
-import smartLogoDark from './assets/icondark136w.avif';
 import './globals.css';
 import './App.css';
+
 import AccordionAcro from './components/ui/AcronymAccordion/AccordionAcro.jsx';
 import SettingsDrawer from './components/ui/settings/SettingsDrawer.jsx';
 import FontSizeDrawer from './components/ui/settings/FontSIzeDrawer.jsx';
 import FooterMetadata from './components/ui/footer/FooterMetadata.jsx';
-import getStoredTheme from '@/src/components/theme/getStoredTheme';
-import setTheme from '@/src/components/theme/setStoredTheme';
+import applyTheme from '@/src/components/theme/applyTheme';
 import iconAndroid from '@/src/components/icons/iconAndroid.jsx';
 import iconApple from '@/src/components/icons/iconApple.jsx';
 import QRCode from '@/src/components/ui/QRCode/QRCode.jsx';
 import ButtonShare from '@/src/components/ui/buttons/share/ButtonShare.jsx';
+import useThemeStore from '@/src/themeStore';
+import Logo from '@/src/components/ui/logo/Logo.jsx';
 function App() {
-	setTheme({ theme: getStoredTheme() });
-	const theme = getStoredTheme();
-	const [filterFavourites, setFilterFavourites] = useState(false);
-	// useEffect(() => {
-	// 	console.log('filterFavourites', filterFavourites);
-	// 	localStorage.setItem('filterFavs', filterFavourites);
-	// }, [filterFavourites]);
+	useThemeStore.setState({
+		theme: localStorage.getItem(useThemeStore.getState().storageKeyTheme),
+	});
+	useThemeStore.subscribe(() => {
+		const themeFromStore = useThemeStore.getState().theme;
+		applyTheme({ theme: themeFromStore });
+		localStorage.setItem(
+			useThemeStore.getState().storageKeyTheme,
+			themeFromStore
+		);
+	});
+
 	return (
 		<div className='app'>
 			<div className='main'>
@@ -31,13 +35,7 @@ function App() {
 						<ButtonShare />
 					</div>
 					<div className='header'>
-						<div>
-							<img
-								src={theme === 'light' ? smartLogoDark : smartLogo}
-								className='logo'
-								alt='Vite logo'
-							/>
-						</div>
+						<Logo />
 						<h1>
 							What the
 							<br />

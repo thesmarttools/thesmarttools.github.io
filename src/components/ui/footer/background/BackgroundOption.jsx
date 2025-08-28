@@ -1,12 +1,11 @@
 'use client';
 import PropTypes from 'prop-types';
 import './styles.css';
-import getStoredTheme from '@/src/components/theme/getStoredTheme';
-import setTheme from '@/src/components/theme/setStoredTheme';
+
+import useThemeStore from '@/src/themeStore';
 export function BackgroundOption({ icon, option, label }) {
-	const storedTheme = getStoredTheme();
-	setTheme({ theme: storedTheme });
-	const classActive = option === storedTheme ? 'active' : '';
+	const theme = useThemeStore.getState().theme;
+	const classActive = option === theme ? 'active' : '';
 	return (
 		<div
 			className={'backgroundOption' + ' ' + classActive}
@@ -14,7 +13,7 @@ export function BackgroundOption({ icon, option, label }) {
 			onClick={(e) => {
 				const target = e.currentTarget;
 				target.classList.add('active');
-				setTheme({ theme: option });
+				useThemeStore.setState({ theme: option });
 			}}
 		>
 			<div data-option={option} dangerouslySetInnerHTML={{ __html: icon }} />

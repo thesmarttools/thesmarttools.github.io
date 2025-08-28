@@ -559,6 +559,72 @@ const data = [
 	},
 	{
 		id: 12,
+		title: 'The Six Ps',
+		content: {
+			acronyms: [
+				{
+					letter: 'P',
+					meaning: 'Piss',
+					definition:
+						'Bluntly reminds us that careless or sloppy effort in recovery can set you up for failure.',
+					scenario: '',
+				},
+				{
+					letter: 'P',
+					meaning: 'Poor',
+					definition:
+						'Signals low-quality or half-hearted planning — a weak starting point that undermines progress.',
+					scenario: '',
+				},
+				{
+					letter: 'P',
+					meaning: 'Planning',
+					definition:
+						'Strong preparation in recovery helps you anticipate challenges, avoid pitfalls, and stay accountable.',
+					scenario: '',
+				},
+				{
+					letter: 'P',
+					meaning: 'Piss',
+					definition:
+						'A repeat of the warning — lack of effort and foresight will echo back later.',
+					scenario: '',
+				},
+				{
+					letter: 'P',
+					meaning: 'Poor',
+					definition:
+						'Represents the outcome of inadequate preparation — weak coping strategies and unnecessary risks.',
+					scenario: '',
+				},
+				{
+					letter: 'P',
+					meaning: 'Performance',
+					definition:
+						'How you actually show up in recovery. Without good planning, performance suffers, leading to setbacks or relapse.',
+					scenario: '',
+				},
+			],
+			explanation:
+				'<b>A memorable recovery slogan:></b><br /> Piss Poor Planning leads to Piss Poor Performance. <br />It’s a tough-love reminder that preparation directly impacts outcomes. <u>The more effort you put into planning, the stronger your recovery performance will be.</u>',
+		},
+		scenarios: [
+			{
+				title: 'Facing a Stressful Event',
+				content:
+					'<b>Piss Poor Planning:</b><br /> You don’t practice coping skills before going to a party. <br /><br /><b>Piss Poor Performance:</b><br /> Anxiety overwhelms you, and you feel tempted to use as an escape.',
+				btnLabel: 'Plan to Cope',
+			},
+			{
+				title: 'Financial Triggers',
+				content:
+					'<b>Piss Poor Planning:</b><br /> You don’t budget or prepare for payday spending urges. <br /><br /><b>Piss Poor Performance:</b><br /> Money disappears quickly, leaving you stressed and vulnerable to relapse.',
+				btnLabel: 'Budget & Prepare',
+			},
+		],
+	},
+	{
+		id: 13,
 		title: 'R.A.V.E.',
 		content: {
 			acronyms: [
@@ -610,7 +676,7 @@ const data = [
 		],
 	},
 	{
-		id: 13,
+		id: 14,
 		title: 'R.E.I',
 		content: {
 			acronyms: [
@@ -655,7 +721,7 @@ const data = [
 		],
 	},
 	{
-		id: 14,
+		id: 15,
 		title: 'S.M.A.R.T.',
 		content: {
 			acronyms: [
@@ -714,7 +780,7 @@ const data = [
 		],
 	},
 	{
-		id: 15,
+		id: 16,
 		title: 'T.A.P.E.',
 		content: {
 			acronyms: [
@@ -766,7 +832,7 @@ const data = [
 		],
 	},
 	{
-		id: 16,
+		id: 17,
 		title: 'U.R.G.E.',
 		content: {
 			acronyms: [
@@ -819,7 +885,7 @@ const data = [
 	},
 
 	{
-		id: 17,
+		id: 18,
 		title: 'U.S.A',
 		content: {
 			acronyms: [
@@ -864,7 +930,7 @@ const data = [
 		],
 	},
 	{
-		id: 18,
+		id: 19,
 		title: 'W.A.I.T.',
 		content: {
 			acronyms: [
