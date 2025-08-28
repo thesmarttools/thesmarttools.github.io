@@ -27,7 +27,7 @@ export function FontSizeDrawer() {
 					<DrawerTitle className='hide'>TItle</DrawerTitle>
 					<div className='settingsDrawerCont'>
 						<div className='settingsDrawer'>
-							<ButtonFontSize size='decreasse' label='Smaller' />
+							<ButtonFontSize size='decrease' label='Smaller' />
 							<ButtonFontSize size='increase' label='Bigger' />
 						</div>
 
