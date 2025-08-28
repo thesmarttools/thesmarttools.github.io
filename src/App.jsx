@@ -87,14 +87,43 @@ function App() {
 							</a>
 						</div>
 						<QRCode label='Share the app, scan the QR Code' />
-						{/* <a
+						<p>
+							This app takes content from the the SMART (Self Management and
+							Recovery Training) method and the tools that people who use the
+							SMART method learn in person and at meetings.
+							<br />
+							<br /> All rights are of their respective owners.
+							<br />
+							<br />
+							See links below
+						</p>
+						<a
 							href='https://smartrecovery.org.uk/'
 							target='_blank'
 							rel='noopener noreferrer'
 						>
 							<br />
 							UK SMART Recovery (UKSR) website
-						</a> */}
+						</a>
+						<p>
+							This app was inspired by the amazing people who facilitate SMART
+							meetings in Nottingham UK and their hard work and deication to
+							help people through their recovery at the
+							<b>Nottingham Recovery Network</b>.
+						</p>
+						<p>
+							<a
+								href='https://www.nottinghamrecoverynetwork.com/'
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								Nottingham Recovery Network
+							</a>
+						</p>
+						<p>Find a SMART meeting near you - worldwide</p>
+						<a href='https://www.smartrecoveryinternational.org/'>
+							SMART Recovery International
+						</a>
 					</div>
 				</div>
 				<FooterMetadata />

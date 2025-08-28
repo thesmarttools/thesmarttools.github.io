@@ -198,3 +198,43 @@ div[data-vaul-overlay][data-vaul-snap-points-overlay='true'] {
 .read-the-docs {
 	color: #888;
 }
+.footer a {
+	color: var(--yellow);
+	text-decoration: underline;
+}
+.footer a:hover {
+	color: var(--lightBlue);
+}
+
+.footer b {
+	position: relative;
+	display: inline-block;
+}
+.footer b::after {
+	content: ' ';
+	width: 90%;
+	height: 14px;
+	background-color: var(--yellow);
+	opacity: 0.4;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	margin-top: 12px;
+	margin-left: -4px;
+}
+.footer b::after {
+	width: 110%;
+	margin-top: 14px;
+	margin-left: -5%;
+}
+.footer u {
+	text-decoration-color: var(--yellow);
+	text-decoration-thickness: 4px;
+	font-weight: 600;
+}
+.footer a {
+	text-decoration-color: var(--yellow);
+	text-decoration-thickness: 4px;
+	font-weight: 600;
+}
