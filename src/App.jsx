@@ -13,9 +13,13 @@ import ButtonShare from '@/src/components/ui/buttons/share/ButtonShare.jsx';
 import useThemeStore from '@/src/themeStore';
 import Logo from '@/src/components/ui/logo/Logo.jsx';
 function App() {
-	useThemeStore.setState({
-		theme: localStorage.getItem(useThemeStore.getState().storageKeyTheme),
-	});
+	const theme = localStorage.getItem(useThemeStore.getState().storageKeyTheme);
+	if (theme !== null) {
+		applyTheme({ theme: theme });
+		useThemeStore.setState({
+			theme: theme,
+		});
+	}
 	useThemeStore.subscribe(() => {
 		const themeFromStore = useThemeStore.getState().theme;
 		applyTheme({ theme: themeFromStore });
