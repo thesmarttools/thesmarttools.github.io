@@ -8,7 +8,7 @@ const ButtonUpdate = ({ label }) => {
 
 	return (
 		<div className='update-icon btn'>
-			<button onClick={handleClick}>
+			<button onClick={handleClick} className='update-btn'>
 				<div>
 					<div dangerouslySetInnerHTML={{ __html: UpdateIcon }} />
 				</div>

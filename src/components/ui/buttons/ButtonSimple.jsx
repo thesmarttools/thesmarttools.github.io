@@ -7,7 +7,9 @@ import PropTypes from 'prop-types';
 const ButtonSimple = ({ label, callback }) => {
 	return (
 		<div className='btn' onClick={callback}>
-			<Button variant='outline'>{label}</Button>
+			<Button variant='outline' className={'btn-' + label.replaceAll(' ', '-')}>
+				{label}
+			</Button>
 		</div>
 	);
 };
