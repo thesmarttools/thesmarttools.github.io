@@ -7,8 +7,8 @@ export function BackgroundOption({ icon, option, label }) {
 	const theme = useThemeStore.getState().theme;
 	const classActive = option === theme ? 'active' : '';
 	return (
-		<div
-			className={'backgroundOption' + ' ' + classActive}
+		<button
+			className={'backgroundOption' + ' ' + classActive + ' theme-' + option}
 			data-option={option}
 			onClick={(e) => {
 				const target = e.currentTarget;
@@ -18,7 +18,7 @@ export function BackgroundOption({ icon, option, label }) {
 		>
 			<div data-option={option} dangerouslySetInnerHTML={{ __html: icon }} />
 			<div>{label && <p>{label}</p>}</div>
-		</div>
+		</button>
 	);
 }
 BackgroundOption.propTypes = {
