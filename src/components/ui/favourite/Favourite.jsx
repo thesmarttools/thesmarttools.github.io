@@ -29,7 +29,7 @@ const Favourite = ({ id, className }) => {
 	};
 
 	return (
-		<div
+		<button
 			className={className + ' AccordionItemFavourite '}
 			onClick={handleClick}
 		>
@@ -38,7 +38,7 @@ const Favourite = ({ id, className }) => {
 				className={imgClassName}
 				alt='Favourite Icon'
 			/>
-		</div>
+		</button>
 	);
 };
 Favourite.propTypes = {
