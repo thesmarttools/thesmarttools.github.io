@@ -242,3 +242,8 @@ div[data-vaul-overlay][data-vaul-snap-points-overlay='true'] {
 	text-decoration: none;
 	color: var(--primary);
 }
+.sf-footer-version {
+	font-size: 0.8rem;
+	font-weight: 300;
+	color: var(--primary);
+}
