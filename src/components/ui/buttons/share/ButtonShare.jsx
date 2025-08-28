@@ -16,7 +16,7 @@ const ButtonShare = ({ label }) => {
 
 	return (
 		<div className='share-icon btn'>
-			<button onClick={handleShare}>
+			<button onClick={handleShare} className='share-btn'>
 				<ShareIcon />
 			</button>
 			<div>{label}</div>
