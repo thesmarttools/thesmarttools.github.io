@@ -64,7 +64,7 @@ function App() {
 
 					<div className='footer'>
 						<div className='install'>
-							Add to you home screen video instructions
+							Add to your home screen video instructions
 						</div>
 						<div className='links'>
 							<a

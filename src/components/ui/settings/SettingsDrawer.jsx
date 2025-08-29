@@ -11,7 +11,9 @@ import {
 import './styles.css';
 
 import ButtonSettings from '../buttons/settings/ButtonSettings.jsx';
-import CheckboxOffline from '../footer/offlineCheckbox/OfflineCheckbox.jsx';
+// import CheckboxOffline from '../footer/offlineCheckbox/OfflineCheckbox.jsx';
+import iconAndroid from '@/src/components/icons/iconAndroid.jsx';
+import iconApple from '@/src/components/icons/iconApple.jsx';
 import BackgroundOptions from '../footer/background/BackgroundOptions';
 import CheckboxFilterFavourites from '@/src/components/ui/CheckboxFilterFavourites/CheckboxFilterFavourites.jsx';
 import ButtonUpdate from '../buttons/update/ButtonUpdate.jsx';
@@ -35,17 +37,44 @@ export function SettingsDrawer() {
 						<CheckboxFilterFavourites />
 
 						<div className='settingsDrawer'>
-							<CheckboxOffline />
-							<ButtonUpdate />
+							{/* <CheckboxOffline /> */}
+							<ButtonUpdate label='Check for updates' />
 						</div>
 
-						<div className='settingsDrawer subtitle tip'>
+						<div className='settingsDrawer subtitle tip install-as-app'>
 							<h3>Install as an app</h3>
 							<p>
-								Android or iOS users:, There are video guides at the bottom of
-								the main screen that show you how to add this website as an app
-								on your homescreen. Close this window and scroll down
+								<b>Android or iOS users:</b>
+								<br /> There are video below that show you how to add this
+								website as an app on your homescreen.
 							</p>
+							<div className='install'>
+								Add to your home screen video instructions
+							</div>
+							<div className='links'>
+								<a
+									href='https://www.youtube.com/watch?v=O1xEXKB6tNg'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<div
+										className='android logo'
+										dangerouslySetInnerHTML={{ __html: iconAndroid }}
+									/>
+									<div>Android</div>
+								</a>
+								<a
+									href='https://www.youtube.com/watch?v=B7fKs4dTeu0'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<div
+										className='apple logo'
+										dangerouslySetInnerHTML={{ __html: iconApple }}
+									/>
+									<div>Apple iOS</div>
+								</a>
+							</div>
 						</div>
 						<DrawerFooter className='drawerFooter'>
 							<DrawerClose asChild>

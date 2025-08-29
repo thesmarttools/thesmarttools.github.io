@@ -1,6 +1,11 @@
 @import '@/src/globals.css';
 @import '../buttonStyles.css';
-
+.update-icon {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.5rem;
+	min-width: 120px;
+}
 .update-icon svg {
 	path {
 		transform: scale(1.5);
