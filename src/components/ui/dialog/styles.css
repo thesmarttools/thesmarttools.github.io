@@ -2,6 +2,7 @@
 .scenarios .scenariosGroup {
 	width: 90%;
 	margin: 0 auto;
+	line-height: 1.1;
 }
 .scenariosGroup button {
 	all: unset;
@@ -9,7 +10,7 @@
 .scenariosGroup button {
 	background-color: transparent;
 	transform: scale(1);
-	padding: 7px 12px;
+	padding: 16px 12px;
 	font-size: 1.2rem;
 	border-radius: 8px;
 	transition: all 0.3s ease-in-out;
