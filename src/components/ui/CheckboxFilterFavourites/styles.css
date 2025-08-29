@@ -4,6 +4,7 @@
 	align-items: flex-end;
 	justify-content: center;
 	margin: 0 auto;
+	padding: 0.5rem 0;
 }
 #CheckboxFilterFavoruites {
 	width: 20px;
@@ -13,10 +14,6 @@
 .CheckboxFilterFavouritesCont .option {
 	display: flex;
 	column-gap: 0.5rem;
-}
-.CheckboxFilterFavouritesCont .option label {
-	/* font-size: 0.8rem; */
-	/* font-weight: 300; */
 }
 
 #CheckboxFilterFavoruites[data-state='checked'] {

@@ -43,14 +43,8 @@ export function SettingsDrawer() {
 
 						<div className='settingsDrawer subtitle tip install-as-app'>
 							<h3>Install as an app</h3>
-							<p>
-								<b>Android or iOS users:</b>
-								<br /> There are video below that show you how to add this
-								website as an app on your homescreen.
-							</p>
-							<div className='install'>
-								Add to your home screen video instructions
-							</div>
+
+							<p>Add to your home screen video instructions</p>
 							<div className='links'>
 								<a
 									href='https://www.youtube.com/watch?v=O1xEXKB6tNg'
