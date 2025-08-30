@@ -134,53 +134,55 @@ function App() {
 						</a>
 
 						<p>
-							<a
-								href='https://www.nottinghamrecoverynetwork.com/'
-								target='_blank'
-								rel='noopener noreferrer'
-							>
-								Nottingham Recovery Network
-							</a>
+							<br />
+							<b>
+								<u>FEEDBACK</u>
+							</b>
 						</p>
 						<p>
-							<b>FEEDBACK</b>
-						</p>
-						<p>
-							Like us, these tools and this app can only get better and improve
-							if we kow what you is good, what is bad, what you like and what
-							you don&apos;t like.
+							Like all of us gong through recovery, these tools and this app can
+							only get better and improve if we know what works, what
+							isn&apos;t, what you like and what you don&apos;t like.
 						</p>
 						<p>
 							Is there something missing? Does something not make sense? Could
 							it be better?
 						</p>
 						<p>
-							<b>Positive or negative</b> we want to hear your thoughts. Have a
-							rant if you need to, or{' '}
+							<b>Positive or negative</b> we want to hear your thoughts.{' '}
+							<u>Have a rant if you need to</u>, but just let us know what{' '}
+							<b>you like</b> and
+							<b>what you don&apos;t like</b>. <br /> <br />
 							<u>
-								just let us know what you like and what you don&apos;t like.
+								ALL feeback is appreciated and
+								<br />
+								we get stronger together
 							</u>
 						</p>
 						<p>
-							Drop us an email at{' '}
+							Drop us an email at with your feedback.
+							<br /> <br />
 							<a href='mailto:thisisthesmarttoolbox@gmail.com?subject=The SMART Toolbox Feedback'>
 								thisisthesmarttoolbox@gmail.com
 							</a>
 						</p>
 						<p>
 							<b>
-								<u>Our promise</u>
+								<u>Our promise is that </u>
 							</b>
-							-{' '}
-							<b>
-								<u>we read every email</u>
-							</b>{' '}
-							and if you want to give your contact details in your email, we
-							will get back to you. We can&apos;t guarantee a reply staright
-							away but{' '}
+							<u> we read every email</u>
+							and if you want to give your contact details in your email,
+							<br />
+							<u>we will get back to you.</u>
+							<br />
+							<br />
+							We can&apos;t guarantee a reply staright away but
 							<b>
 								<u>we will get back to you. That&apos;t our promise.</u>
 							</b>
+							<br />
+							<br />
+							<b>Big up yourself, you are stronger than you think.</b>
 						</p>
 					</div>
 				</div>
