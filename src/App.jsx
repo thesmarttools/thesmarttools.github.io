@@ -132,6 +132,56 @@ function App() {
 						>
 							SMART Recovery International
 						</a>
+
+						<p>
+							<a
+								href='https://www.nottinghamrecoverynetwork.com/'
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								Nottingham Recovery Network
+							</a>
+						</p>
+						<p>
+							<b>FEEDBACK</b>
+						</p>
+						<p>
+							Like us, these tools and this app can only get better and improve
+							if we kow what you is good, what is bad, what you like and what
+							you don&apos;t like.
+						</p>
+						<p>
+							Is there something missing? Does something not make sense? Could
+							it be better?
+						</p>
+						<p>
+							<b>Positive or negative</b> we want to hear your thoughts. Have a
+							rant if you need to, or{' '}
+							<u>
+								just let us know what you like and what you don&apos;t like.
+							</u>
+						</p>
+						<p>
+							Drop us an email at{' '}
+							<a href='mailto:thisisthesmarttoolbox@gmail.com?subject=The SMART Toolbox Feedback'>
+								thisisthesmarttoolbox@gmail.com
+							</a>
+						</p>
+						<p>
+							<b>
+								<u>Our promise</u>
+							</b>
+							-{' '}
+							<b>
+								<u>we read every email</u>
+							</b>{' '}
+							and if you want to give your contact details in your email, we
+							will get back to you. We can&apos;t guarantee a reply staright
+							away but{' '}
+							<b>
+								<u>we will get back to you. That&apos;t our promise.</u>
+							</b>
+						</p>
 					</div>
 				</div>
 				<FooterMetadata />
